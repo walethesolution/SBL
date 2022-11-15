@@ -1,22 +1,19 @@
-import React from "react";
 import Logo from "../../assets/sbl-logo.png";
-import "./index.css";
+import { AppBar, Button, IconButton, Stack, Toolbar } from "@mui/material";
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
-    <div className="header">
-      <div className="logoContainer">
-        <img src={Logo} alt="sbl logo" className="logo"></img>
-      </div>
-      <div className="nav">
-        <ul>
-          <li>Games</li>
-          <li>Stats</li>
-          <li>Teams</li>
-          <li>Players</li>
-        </ul>
-      </div>
-    </div>
+    <AppBar position="static">
+      <Toolbar>
+        <IconButton>SBL</IconButton>
+        <Stack direction="row" spacing={2}>
+          <Button color="inherit">Games</Button>
+          <Button color="inherit">Stats</Button>
+          <Button color="inherit">Teams</Button>
+          <Button color="inherit">Players</Button>
+        </Stack>
+      </Toolbar>
+    </AppBar>
   );
 };
 
