@@ -1,26 +1,25 @@
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  //   ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  height: "",
-  color: theme.palette.text.secondary,
-}));
+import { Typography, Box, Button } from "@mui/material";
+import sbl from "../../assets/sbl-logo.png";
 
 export default function BasicGrid() {
   return (
     <Box>
       <Grid container spacing={4}>
-        <Grid item xs={8}>
-          <Item>Image</Item>
+        <Grid item xs={12} md={6}>
+          <img src={sbl} alt="My Team" />
         </Grid>
-        <Grid item xs={4}>
-          <Item>Headline</Item>
+        <Grid item xs={12} md={6}>
+          <Typography variant="h2" fontWeight="700">
+            Everybody's League
+          </Typography>
+          <Typography variant="h6">
+            Pros in the community. Spoiler alert: we are all pros in this
+            community.
+          </Typography>
+          <Button variant="contained" color="primary">
+            Come Ball w US
+          </Button>
         </Grid>
       </Grid>
     </Box>
