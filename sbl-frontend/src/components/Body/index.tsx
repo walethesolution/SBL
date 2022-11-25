@@ -2,10 +2,14 @@ import Grid from "@mui/material/Grid";
 import { Typography, Box, Button } from "@mui/material";
 import sbl from "../../assets/sbl-logo.png";
 
-export default function BasicGrid() {
+export default function HomePage() {
   return (
     <Box>
-      <Grid container spacing={4}>
+      <Grid
+        container
+        spacing={4}
+        sx={{ justifyContent: "center", alignItems: "center" }}
+      >
         <Grid item xs={12} md={6}>
           <img src={sbl} alt="My Team" />
         </Grid>
@@ -18,7 +22,7 @@ export default function BasicGrid() {
             community.
           </Typography>
           <Button variant="contained" color="primary">
-            Come Ball w US
+            Come join us
           </Button>
         </Grid>
       </Grid>
