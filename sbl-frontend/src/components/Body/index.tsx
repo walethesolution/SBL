@@ -19,10 +19,10 @@ export default function HomePage() {
       sx={{ marginTop: "40px", backgroundColor: "rgba(128, 128, 128, 0.08)" }}
     >
       <Grid container spacing={4} sx={{ alignItems: "center" }}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sm={12}>
           <img src={mainPic} alt="My Team" style={imageStyles} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sm={12}>
           <Typography variant="h1" fontWeight="700">
             Everybody's League
           </Typography>
