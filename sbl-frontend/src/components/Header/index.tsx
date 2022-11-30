@@ -1,5 +1,3 @@
-// import Logo from "../../assets/sbl-logo.png";
-import "./index.css";
 import { AppBar, Button, IconButton, Stack, Toolbar } from "@mui/material";
 import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
 
