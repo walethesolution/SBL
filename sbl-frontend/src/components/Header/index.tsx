@@ -12,6 +12,7 @@ const Header = () => {
           sx={{ flexGrow: 1, justifyContent: "center" }}
         >
           <Button color="inherit">Games</Button>
+          <Button color="inherit">About</Button>
           <Button color="inherit">Stats</Button>
           <Button color="inherit">Teams</Button>
           <Button color="inherit">Players</Button>
