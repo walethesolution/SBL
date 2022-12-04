@@ -3,8 +3,7 @@ import { Typography, Box, Button } from "@mui/material";
 import mainPic from "../../assets/headlinePic.jpg";
 export default function Headline() {
   const imageStyles = {
-    width: "420px",
-    // height: "844px",
+    width: "430px",
     alignItems: "center",
     marginBottom: "30px",
   };
@@ -16,11 +15,11 @@ export default function Headline() {
     <Box
       sx={{ marginTop: "40px", backgroundColor: "rgba(128, 128, 128, 0.08)" }}
     >
-      <Grid container spacing={4} sx={{ alignItems: "center" }}>
+      <Grid container spacing={6} sx={{ alignItems: "center" }}>
         <Grid container item xs={12} md={6}>
           <Grid item>
-            <Typography variant="h1" fontWeight="700">
-              Everybody's League
+            <Typography variant="h2" fontWeight="600">
+              EVERYBODY'S LEAGUE
             </Typography>
           </Grid>
           <Grid item>

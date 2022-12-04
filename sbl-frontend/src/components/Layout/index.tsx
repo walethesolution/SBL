@@ -1,8 +1,9 @@
 import React from "react";
 import About from "../About";
-import Body from "../Body";
+import Blog from "../Blog";
 import Header from "../Header";
 import Headline from "../Headline";
+import Footer from "../Footer";
 
 const Layout: React.FC = () => {
   return (
@@ -10,7 +11,8 @@ const Layout: React.FC = () => {
       <Header />
       <Headline />
       <About />
-      <Body />
+      <Blog />
+      <Footer />
     </div>
   );
 };
