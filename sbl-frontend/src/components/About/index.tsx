@@ -1,35 +1,48 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button, Grid } from "@mui/material";
 
 function About() {
   return (
     <Box
       sx={{
-        marginTop: "20px",
-        backgroundColor: "rgba(128, 128, 128, 0.08)",
+        marginTop: "30px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
-      <Typography
-        variant="h3"
-        sx={{ display: "flex", justifyContent: "center" }}
-      >
+      <Typography variant="h2" fontWeight="550">
         WHO WE ARE
       </Typography>
-      <Typography
-        variant="h6"
-        color="text.secondary"
-        sx={{ display: "flex", justifyContent: "center" }}
+      <Grid
+        container
+        sx={{
+          marginTop: "30px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        We are a body that's commited to creating a good atmosphere every game
-        day.
-      </Typography>
-      <Typography
-        variant="h6"
-        color="text.secondary"
-        sx={{ display: "flex", justifyContent: "center" }}
-      >
-        Come test your skill level and improve on your basketball game. Friendly
-        trashtalks are allowed
-      </Typography>
+        <Grid item>
+          <Typography variant="h6" color="text.secondary">
+            We are a body that's commited to creating a good atmosphere every
+            game day.
+          </Typography>
+          <Typography variant="h6" color="text.secondary">
+            Come test your skill level and improve on your basketball game.
+            Friendly trashtalks are allowed
+          </Typography>
+          <Button
+            variant="contained"
+            sx={{
+              marginTop: "30px",
+              marginLeft: "45%",
+              borderRadius: "50px",
+            }}
+          >
+            Members
+          </Button>
+        </Grid>
+      </Grid>
     </Box>
   );
 }

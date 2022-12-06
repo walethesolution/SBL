@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid";
 import { Typography, Box, Button } from "@mui/material";
 import mainPic from "../../assets/headlinePic.jpg";
+
 export default function Headline() {
   const imageStyles = {
     width: "430px",
@@ -18,8 +19,8 @@ export default function Headline() {
       <Grid container spacing={6} sx={{ alignItems: "center" }}>
         <Grid container item xs={12} md={6}>
           <Grid item>
-            <Typography variant="h2" fontWeight="600">
-              EVERYBODY'S LEAGUE
+            <Typography variant="h1" fontWeight="600">
+              Everybody's league
             </Typography>
           </Grid>
           <Grid item>
@@ -27,15 +28,17 @@ export default function Headline() {
           </Grid>
           <Button
             variant="contained"
-            color="success"
-            sx={{ marginTop: "40px" }}
+            sx={{
+              marginTop: "40px",
+              borderRadius: "50px",
+            }}
             style={buttonStyles}
             size="large"
           >
             Come join us
           </Button>
         </Grid>
-        <Grid item xs={12} md={6} sm={12}>
+        <Grid item xs={12} md={6}>
           <img src={mainPic} alt="My Team" style={imageStyles} />
         </Grid>
       </Grid>

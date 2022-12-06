@@ -8,9 +8,7 @@ import TreesnCourt from "../../assets/TreesnCourt.jpg";
 
 export default function MultiActionAreaCard() {
   return (
-    <Box
-      sx={{ marginTop: "30px", backgroundColor: "rgba(128, 128, 128, 0.08)" }}
-    >
+    <Box sx={{ marginTop: "40px" }}>
       <Grid container spacing={2}>
         <Grid item>
           <Card sx={{ maxWidth: 350 }}>

@@ -16,6 +16,7 @@ const Header = () => {
           <Button color="inherit">Stats</Button>
           <Button color="inherit">Teams</Button>
           <Button color="inherit">Players</Button>
+          <Button color="inherit">Blog</Button>
         </Stack>
         <Button color="inherit">
           <ShoppingCartTwoToneIcon />
