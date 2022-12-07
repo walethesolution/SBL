@@ -9,9 +9,16 @@ import TreesnCourt from "../../assets/TreesnCourt.jpg";
 export default function MultiActionAreaCard() {
   return (
     <Box sx={{ marginTop: "40px" }}>
+      <Typography
+        variant="h3"
+        fontWeight="550"
+        sx={{ backgroundColor: "white" }}
+      >
+        TRENDING
+      </Typography>
       <Grid container spacing={2}>
         <Grid item>
-          <Card sx={{ maxWidth: 350 }}>
+          <Card sx={{ maxWidth: 350, marginTop: "20px" }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -37,7 +44,7 @@ export default function MultiActionAreaCard() {
           </Card>
         </Grid>
         <Grid item>
-          <Card sx={{ maxWidth: 350 }}>
+          <Card sx={{ maxWidth: 350, marginTop: "20px" }}>
             <CardActionArea>
               <CardMedia
                 component="img"

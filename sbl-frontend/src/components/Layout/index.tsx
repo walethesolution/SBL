@@ -4,16 +4,17 @@ import Blog from "../Blog";
 import Header from "../Header";
 import Headline from "../Headline";
 import Footer from "../Footer";
+import { Box } from "@mui/material";
 
 const Layout: React.FC = () => {
   return (
-    <div>
+    <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.07)" }}>
       <Header />
       <Headline />
       <About />
       <Blog />
       <Footer />
-    </div>
+    </Box>
   );
 };
 

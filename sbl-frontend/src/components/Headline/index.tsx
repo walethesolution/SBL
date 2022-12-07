@@ -4,18 +4,19 @@ import mainPic from "../../assets/headlinePic.jpg";
 
 export default function Headline() {
   const imageStyles = {
-    width: "430px",
-    alignItems: "center",
+    width: "643px",
+    height: "700px",
     marginBottom: "30px",
   };
 
   const buttonStyles = {
     width: "80%",
   };
+
+  const textStyles = { marginTop: "40px" };
+
   return (
-    <Box
-      sx={{ marginTop: "40px", backgroundColor: "rgba(128, 128, 128, 0.08)" }}
-    >
+    <Box>
       <Grid container spacing={6} sx={{ alignItems: "center" }}>
         <Grid container item xs={12} md={6}>
           <Grid item>
@@ -24,7 +25,9 @@ export default function Headline() {
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="h6">Community professionals</Typography>
+            <Typography variant="h5" color="text.secondary" style={textStyles}>
+              Community professionals
+            </Typography>
           </Grid>
           <Button
             variant="contained"
