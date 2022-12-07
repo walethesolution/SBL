@@ -3,7 +3,7 @@ import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
 
 const Header = () => {
   return (
-    <AppBar position="static" style={{ background: "black" }}>
+    <AppBar position="fixed" style={{ background: "black" }}>
       <Toolbar>
         <IconButton color="inherit">SBL</IconButton>
         <Stack
