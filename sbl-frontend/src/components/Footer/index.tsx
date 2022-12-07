@@ -1,8 +1,16 @@
-import { AppBar, Button, Stack, Toolbar, Box, Typography } from "@mui/material";
+import {
+  AppBar,
+  Button,
+  Stack,
+  Toolbar,
+  Box,
+  Typography,
+  Divider,
+  Grid,
+} from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import GoogleIcon from "@mui/icons-material/Google";
 
 const Footer = () => {
   return (
@@ -11,35 +19,43 @@ const Footer = () => {
         position="static"
         style={{ background: "black", height: "250px" }}
       >
-        <Toolbar>
-          <Stack
-            direction="row"
-            spacing={4}
-            sx={{ flexGrow: 1, justifyContent: "center" }}
-          >
-            <Button color="inherit">
-              <InstagramIcon />
-            </Button>
-            <Button color="inherit">
-              <TwitterIcon />
-            </Button>
-            <Button color="inherit">
-              <YouTubeIcon />
-            </Button>
-            <Button color="inherit">
-              <GoogleIcon />
-            </Button>
-          </Stack>
+        <Toolbar sx={{ flexGrow: 1, justfiyContent: "center" }}>
+          <Grid container sx={{ justifyContent: "space-between" }}>
+            <Stack>
+              <Typography variant="h6">SBL</Typography>
+              <Typography variant="inherit" color="grey">
+                Come test your basketball skills.
+              </Typography>
+              <Typography variant="inherit" color="grey">
+                Improve life skill as a bonus
+              </Typography>
+            </Stack>
+            <Stack>
+              <Typography variant="inherit">Follow us</Typography>
+              <Button color="inherit">
+                <InstagramIcon />
+              </Button>
+              <Button color="inherit">
+                <TwitterIcon />
+              </Button>
+              <Button color="inherit">
+                <YouTubeIcon />
+              </Button>
+            </Stack>
+          </Grid>
         </Toolbar>
-        <Typography
-          variant="h5"
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          (c) Sunday Balling League. 2022
-        </Typography>
+        <Divider variant="middle" color="white" />
+        <Toolbar>
+          <Typography
+            variant="inherit"
+            sx={{
+              display: "flex",
+              justifyContent: "start",
+            }}
+          >
+            (c) 2022 Sunday Balling League. All rights reserved
+          </Typography>
+        </Toolbar>
       </AppBar>
     </Box>
   );
