@@ -1,11 +1,10 @@
-import Grid from "@mui/material/Grid";
-import { Typography, Box, Button } from "@mui/material";
-import mainPic from "../../assets/headlinePic.jpg";
+import { Typography, Box, Button, Grid } from "@mui/material";
+import mainPic from "../../../assets/headlinePic.jpg";
 
 export default function Headline() {
   const imageStyles = {
-    width: "643px",
-    height: "700px",
+    width: "650px",
+    height: "725px",
     marginBottom: "30px",
   };
 

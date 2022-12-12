@@ -3,10 +3,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, Button, CardActionArea, CardActions, Grid } from "@mui/material";
-import TheBoys from "../../assets/fall-ball3.jpg";
-import TreesnCourt from "../../assets/TreesnCourt.jpg";
+import TheBoys from "../../../assets/fall-ball3.jpg";
+import TreesnCourt from "../../../assets/TreesnCourt.jpg";
 
-export default function MultiActionAreaCard() {
+export default function Blog() {
   return (
     <Box sx={{ marginTop: "40px" }}>
       <Typography

@@ -1,9 +1,9 @@
 import React from "react";
-import About from "../About";
-import Blog from "../Blog";
-import Header from "../Header";
-import Headline from "../Headline";
-import Footer from "../Footer";
+import About from "../landing-page/About";
+import Blog from "../landing-page/Blog";
+import Header from "../landing-page/Header";
+import Headline from "../landing-page/Headline";
+import Footer from "../landing-page/Footer";
 import { Box } from "@mui/material";
 
 const Layout: React.FC = () => {

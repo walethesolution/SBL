@@ -1,6 +1,6 @@
 import { Box, Typography, Button, Grid } from "@mui/material";
 
-function About() {
+export default function About() {
   const buttonStyle = { width: "25%" };
 
   return (
@@ -54,5 +54,3 @@ function About() {
     </Box>
   );
 }
-
-export default About;

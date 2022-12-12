@@ -1,7 +1,7 @@
 import { AppBar, Button, IconButton, Stack, Toolbar } from "@mui/material";
 import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
 
-const Header = () => {
+export default function Header() {
   return (
     <AppBar position="fixed" style={{ background: "black" }}>
       <Toolbar>
@@ -25,6 +25,4 @@ const Header = () => {
       </Toolbar>
     </AppBar>
   );
-};
-
-export default Header;
+}

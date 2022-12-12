@@ -12,7 +12,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <Box sx={{ marginTop: "20px" }}>
       <AppBar
@@ -59,6 +59,4 @@ const Footer = () => {
       </AppBar>
     </Box>
   );
-};
-
-export default Footer;
+}
