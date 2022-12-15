@@ -1,5 +1,6 @@
 import { AppBar, Button, IconButton, Stack, Toolbar } from "@mui/material";
 import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -11,12 +12,24 @@ export default function Header() {
           spacing={4}
           sx={{ flexGrow: 1, justifyContent: "center" }}
         >
-          <Button color="inherit">Games</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Stats</Button>
-          <Button color="inherit">Teams</Button>
-          <Button color="inherit">Players</Button>
-          <Button color="inherit">Blog</Button>
+          <NavLink to="/games">
+            <Button color="inherit">Games</Button>
+          </NavLink>
+          <NavLink to="/about">
+            <Button color="inherit">About</Button>
+          </NavLink>
+          <NavLink to="/stats">
+            <Button color="inherit">Stats</Button>
+          </NavLink>
+          <NavLink to="/teams">
+            <Button color="inherit">Teams</Button>
+          </NavLink>
+          <NavLink to="/players">
+            <Button color="inherit">Players</Button>
+          </NavLink>
+          <NavLink to="/blog">
+            <Button color="inherit">Blog</Button>
+          </NavLink>
         </Stack>
         <Button color="inherit">
           <ShoppingCartTwoToneIcon />

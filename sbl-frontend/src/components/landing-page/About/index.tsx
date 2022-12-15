@@ -19,8 +19,6 @@ export default function About() {
           alignItems: "center",
         }}
         spacing={4}
-        xs={12}
-        md={12}
       >
         <Typography variant="h3" fontWeight="550">
           WHO WE ARE

@@ -5,10 +5,16 @@ import Header from "../landing-page/Header";
 import Headline from "../landing-page/Headline";
 import Footer from "../landing-page/Footer";
 import { Box } from "@mui/material";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
 
 const Layout: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.07)" }}>
+    <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
       <Header />
       <Headline />
       <About />

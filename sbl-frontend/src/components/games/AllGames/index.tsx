@@ -1,6 +1,4 @@
 import {
-  AppBar,
-  Toolbar,
   Box,
   Grid,
   Button,
@@ -11,22 +9,21 @@ import {
   CardContent,
   CardMedia,
 } from "@mui/material";
+import Footer from "../../landing-page/Footer";
+import Header from "../../landing-page/Header";
 
 export default function AllGames() {
   return (
     <Box>
-      <AppBar>
-        <Toolbar>
-          <Grid>
-            <Grid item>
-              <Button>All games</Button>
-            </Grid>
-            <Grid item>
-              <Button>Highlight of the week</Button>
-            </Grid>
-          </Grid>
-        </Toolbar>
-      </AppBar>
+      <Header />
+      <Grid>
+        <Grid item>
+          <Button>All games</Button>
+        </Grid>
+        <Grid item>
+          <Button>Highlight of the week</Button>
+        </Grid>
+      </Grid>
       <Box>
         <Stack>
           <Box>
@@ -88,6 +85,7 @@ export default function AllGames() {
           </Box>
         </Stack>
       </Box>
+      <Footer />
     </Box>
   );
 }
