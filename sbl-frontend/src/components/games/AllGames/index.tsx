@@ -20,7 +20,7 @@ const dummyStyle = {
 export default function AllGames() {
   return (
     <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.51)" }}>
-      <Toolbar>
+      <Toolbar sx={{ marginBottom: "20px" }}>
         <Grid>
           <Grid item>
             <Button>All games</Button>
@@ -32,7 +32,7 @@ export default function AllGames() {
       </Toolbar>
       <Box>
         <Stack>
-          <Card>
+          <Card sx={{ backgroundColor: "rgba(0, 0, 0, 0.35)" }}>
             <CardContent>Month, Year</CardContent>
           </Card>
           <Box
@@ -42,8 +42,8 @@ export default function AllGames() {
             }}
           >
             <Grid>
-              <Grid item>
-                <Card>
+              <Grid item xs={12} md={6}>
+                <Card sx={{ backgroundColor: "rgba(0, 0, 0, 0.35)" }}>
                   <DummyImage
                     width={100}
                     height={100}
@@ -53,8 +53,6 @@ export default function AllGames() {
                   <CardContent>
                     <Typography>TEAM A</Typography>
                   </CardContent>
-                </Card>
-                <Card>
                   <DummyImage
                     width={100}
                     height={100}
