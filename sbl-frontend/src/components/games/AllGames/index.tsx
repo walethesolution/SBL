@@ -8,9 +8,9 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Toolbar,
 } from "@mui/material";
-// import Footer from "../../landing-page/Footer";
-// import Header from "../../landing-page/Header";
+import { Form } from "react-router-dom";
 import { DummyImage } from "react-simple-placeholder-image";
 
 const dummyStyle = {
@@ -20,84 +20,63 @@ const dummyStyle = {
 export default function AllGames() {
   return (
     <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.51)" }}>
-      {/* <Header /> */}
-      <Grid>
-        <Grid item>
-          <Button>All games</Button>
+      <Toolbar>
+        <Grid>
+          <Grid item>
+            <Button>All games</Button>
+          </Grid>
+          <Grid item>
+            <Button>Highlight of the week</Button>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Button>Highlight of the week</Button>
-        </Grid>
-      </Grid>
+      </Toolbar>
       <Box>
         <Stack>
-          <Box>
-            <Typography>Month, Year</Typography>
-          </Box>
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Card>
+            <CardContent>Month, Year</CardContent>
+          </Card>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             <Grid>
               <Grid item>
                 <Card>
-                  <Grid>
-                    <Grid item>
-                      {/* <CardMedia */}
-                      {/* component="img" */}
-                      {/* // sx={{ width: 151, borderRadius: 50 }} */}
-                      {/* src={ */}
-                      <DummyImage
-                        width={100}
-                        height={100}
-                        shape="image"
-                        style={dummyStyle}
-                      />
-                      {/* } */}
-                      {/* alt="Team Image" */}
-                      {/* /> */}
-                      <CardContent>
-                        <Typography>TEAM A</Typography>
-                      </CardContent>
-                    </Grid>
-                    <Grid item>
-                      <CardContent>
-                        <Typography>7</Typography>
-                      </CardContent>
-                    </Grid>
-                  </Grid>
+                  <DummyImage
+                    width={100}
+                    height={100}
+                    shape="image"
+                    style={dummyStyle}
+                  />
+                  <CardContent>
+                    <Typography>TEAM A</Typography>
+                  </CardContent>
                 </Card>
-              </Grid>
-              <Grid item>
-                <Typography>FINAL</Typography>
-              </Grid>
-              <Grid item>
                 <Card>
-                  <Grid>
-                    <Grid item>
-                      <CardContent>
-                        <Typography>5</Typography>
-                      </CardContent>
-                    </Grid>
-                    <Grid item>
-                      <CardMedia
-                        component="img"
-                        sx={{ width: 151, borderRadius: 50 }}
-                        image=""
-                        alt="Team B"
-                      />
-                      <CardContent>
-                        <Typography>TEAM B</Typography>
-                      </CardContent>
-                    </Grid>
-                  </Grid>
+                  <DummyImage
+                    width={100}
+                    height={100}
+                    shape="image"
+                    style={dummyStyle}
+                  />
+                  <CardContent>
+                    <Typography>TEAM B</Typography>
+                  </CardContent>
                 </Card>
               </Grid>
+              <Divider variant="middle" color="grey" />
+              <Form>
+                <Button>Highlight</Button>
+              </Form>
+              <Form>
+                <Button>Box Score</Button>
+              </Form>
             </Grid>
-            <Divider variant="middle" color="grey" />
-            <Button>Highlight</Button>
-            <Button>Box Score</Button>
           </Box>
         </Stack>
       </Box>
-      {/* <Footer /> */}
     </Box>
   );
 }
