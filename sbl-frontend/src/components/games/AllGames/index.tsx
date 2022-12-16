@@ -9,13 +9,18 @@ import {
   CardContent,
   CardMedia,
 } from "@mui/material";
-import Footer from "../../landing-page/Footer";
-import Header from "../../landing-page/Header";
+// import Footer from "../../landing-page/Footer";
+// import Header from "../../landing-page/Header";
+import { DummyImage } from "react-simple-placeholder-image";
+
+const dummyStyle = {
+  borderRadius: 50,
+};
 
 export default function AllGames() {
   return (
-    <Box>
-      <Header />
+    <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.51)" }}>
+      {/* <Header /> */}
       <Grid>
         <Grid item>
           <Button>All games</Button>
@@ -35,12 +40,19 @@ export default function AllGames() {
                 <Card>
                   <Grid>
                     <Grid item>
-                      <CardMedia
-                        component="img"
-                        sx={{ width: 151, borderRadius: 50 }}
-                        image=""
-                        alt="Team Image"
+                      {/* <CardMedia */}
+                      {/* component="img" */}
+                      {/* // sx={{ width: 151, borderRadius: 50 }} */}
+                      {/* src={ */}
+                      <DummyImage
+                        width={100}
+                        height={100}
+                        shape="image"
+                        style={dummyStyle}
                       />
+                      {/* } */}
+                      {/* alt="Team Image" */}
+                      {/* /> */}
                       <CardContent>
                         <Typography>TEAM A</Typography>
                       </CardContent>
@@ -85,7 +97,7 @@ export default function AllGames() {
           </Box>
         </Stack>
       </Box>
-      <Footer />
+      {/* <Footer /> */}
     </Box>
   );
 }
