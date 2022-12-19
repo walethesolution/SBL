@@ -1,4 +1,5 @@
 import {
+  AppBar,
   Box,
   Grid,
   Button,
@@ -16,23 +17,22 @@ const dummyStyle = {
   borderRadius: 50,
 };
 
-const buttonStyle = {
-  backgroundColor: "black",
-  color: "white",
-};
-
 export default function AllGames() {
   return (
-    <Box>
-      <Tabs>
-        <Tab label="All games" />
-        <Tab label="Highlight of the week" />
-      </Tabs>
-
+    <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}
+      >
+        <Tabs>
+          <Tab value="0" label="All games" />
+          <Tab value="1" label="Highlight of the week" />
+        </Tabs>
+      </AppBar>
       <Box
         sx={{
           marginLeft: "15%",
-          marginTop: "5%",
+          marginTop: "2%",
           width: "70%",
         }}
       >

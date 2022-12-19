@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <AppBar position="fixed" style={{ background: "black" }}>
+    <AppBar position="fixed" style={{ backgroundColor: "black" }}>
       <Toolbar>
         <IconButton color="inherit">SBL</IconButton>
         <Stack
