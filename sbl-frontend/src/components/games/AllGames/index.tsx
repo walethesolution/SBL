@@ -7,7 +7,6 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-import { Form } from "react-router-dom";
 import { DummyImage } from "react-simple-placeholder-image";
 
 const dummyStyle = {
@@ -21,26 +20,15 @@ const buttonStyle = {
 export default function AllGames() {
   return (
     <Box>
-      <Grid>
-        <Grid item>
-          <Button style={buttonStyle} variant="text">
-            All games
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button color="inherit">Highlight of the week</Button>
-        </Grid>
-      </Grid>
-      <Box>
+      <Button style={buttonStyle} variant="contained">
+        All games
+      </Button>
+      <Button color="inherit">Highlight of the week</Button>
+      <Box display="flex" justifyContent="center">
         <Card sx={{ backgroundColor: "rgba(0, 0, 0, 0.35)" }}>
           <CardContent>Month, Year</CardContent>
         </Card>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
+        <Box>
           <Grid>
             <Grid item xs={12} md={6}>
               <Card sx={{ backgroundColor: "rgba(0, 0, 0, 0.35)" }}>
@@ -62,15 +50,13 @@ export default function AllGames() {
                 <CardContent>
                   <Typography>TEAM B</Typography>
                 </CardContent>
+                <Divider variant="middle" color="grey" />
+                <Box>
+                  <Button color="inherit">Highlight</Button>
+                  <Button color="inherit">Box Score</Button>
+                </Box>
               </Card>
             </Grid>
-            <Divider variant="middle" color="grey" />
-            <Form>
-              <Button>Highlight</Button>
-            </Form>
-            <Form>
-              <Button>Box Score</Button>
-            </Form>
           </Grid>
         </Box>
       </Box>
