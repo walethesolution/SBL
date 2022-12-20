@@ -10,6 +10,7 @@ import {
   Tab,
 } from "@mui/material";
 import { Stack } from "@mui/system";
+import { Form } from "react-router-dom";
 import { DummyImage } from "react-simple-placeholder-image";
 
 const dummyStyle = {
@@ -43,7 +44,13 @@ export default function AllGames() {
                       marginTop: "2%",
                     }}
                   >
-                    <Grid container sx={{ justifyContent: "space-evenly" }}>
+                    <Grid
+                      container
+                      sx={{
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                    >
                       <Grid item>
                         <CardContent> </CardContent>
                         <DummyImage
@@ -55,6 +62,9 @@ export default function AllGames() {
                         <CardContent>
                           <Typography>TEAM A</Typography>
                         </CardContent>
+                      </Grid>
+                      <Grid item>
+                        <Typography>FINAL</Typography>
                       </Grid>
                       <Grid item>
                         <CardContent> </CardContent>
@@ -71,8 +81,16 @@ export default function AllGames() {
                     </Grid>
                     <Divider variant="middle" color="grey" />
                     <Box sx={{ justifyContent: "center" }}>
-                      <Button color="inherit">Highlight</Button>
-                      <Button color="inherit">Box Score</Button>
+                      <Form>
+                        <Button variant="contained" color="inherit">
+                          Highlight
+                        </Button>
+                      </Form>
+                      <Form>
+                        <Button color="inherit" variant="contained">
+                          Box Score
+                        </Button>
+                      </Form>
                     </Box>
                   </Card>
                 </Grid>
