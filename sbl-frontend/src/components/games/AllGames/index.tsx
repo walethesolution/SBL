@@ -79,17 +79,14 @@ export default function AllGames() {
                         </CardContent>
                       </Grid>
                     </Grid>
-                    <Divider variant="middle" color="grey" />
-                    <Box sx={{ justifyContent: "center" }}>
+                    <Divider variant="middle" />
+                    <Box sx={{ display: "flex", justifyContent: "center" }}>
                       <Form>
-                        <Button variant="contained" color="inherit">
-                          Highlight
-                        </Button>
+                        <Button color="inherit">Highlight</Button>
                       </Form>
+                      <Divider orientation="vertical" color="black" />
                       <Form>
-                        <Button color="inherit" variant="contained">
-                          Box Score
-                        </Button>
+                        <Button color="inherit">Box Score</Button>
                       </Form>
                     </Box>
                   </Card>
