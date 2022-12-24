@@ -1,5 +1,5 @@
 # SBL
-### A full-stack website for a basketball league. SBL - Sunday Balling League
+### A full-stack web app for a basketball league. SBL - Sunday Balling League
 
 ### Stack
 - PERN 
