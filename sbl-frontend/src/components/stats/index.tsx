@@ -1,11 +1,9 @@
 import {
   Box,
   Grid,
-  Button,
-  Divider,
   Typography,
   Card,
-  CardContent,
+  CardHeader,
   Tabs,
   Tab,
   Stack,
@@ -19,7 +17,41 @@ export default function Stats() {
         <Tab value="1" label="Points" />
         <Tab value="2" label="Assists" />
         <Tab value="3" label="Rebounds" />
+        <Tab value="4" label="Blocks" />
       </Tabs>
+      <Box>
+        <Grid container>
+          <Grid item>
+            <Typography>Last week's leaders</Typography>
+          </Grid>
+          <Grid item>
+            <Typography> Season leaders</Typography>
+          </Grid>
+        </Grid>
+
+        <Grid container>
+          <Grid item>
+            <Card>
+              <CardHeader>Points</CardHeader>
+            </Card>
+          </Grid>
+          <Grid item>
+            <Card>
+              <CardHeader>Assists</CardHeader>
+            </Card>
+          </Grid>
+          <Grid item>
+            <Card>
+              <CardHeader>Rebounds</CardHeader>
+            </Card>
+          </Grid>
+          <Grid item>
+            <Card>
+              <CardHeader>Blocks</CardHeader>
+            </Card>
+          </Grid>
+        </Grid>
+      </Box>
     </Box>
   );
 }
