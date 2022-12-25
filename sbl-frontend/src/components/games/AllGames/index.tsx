@@ -93,6 +93,63 @@ export default function AllGames() {
                 </Grid>
               </Grid>
             </Box>
+            <Box>
+              <Grid>
+                <Grid item>
+                  <Card
+                    sx={{
+                      marginTop: "2%",
+                    }}
+                  >
+                    <Grid
+                      container
+                      sx={{
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Grid item>
+                        <CardContent> </CardContent>
+                        <DummyImage
+                          width={100}
+                          height={100}
+                          shape="image"
+                          style={dummyStyle}
+                        />
+                        <CardContent>
+                          <Typography>TEAM A</Typography>
+                        </CardContent>
+                      </Grid>
+                      <Grid item>
+                        <Typography>FINAL</Typography>
+                      </Grid>
+                      <Grid item>
+                        <CardContent> </CardContent>
+                        <DummyImage
+                          width={100}
+                          height={100}
+                          shape="image"
+                          style={dummyStyle}
+                        />
+                        <CardContent>
+                          <Typography>TEAM B</Typography>
+                        </CardContent>
+                      </Grid>
+                    </Grid>
+                    <Divider variant="middle" />
+                    <Box sx={{ display: "flex", justifyContent: "center" }}>
+                      <Form>
+                        <Button color="inherit">Highlight</Button>
+                      </Form>
+                      <Divider orientation="vertical" color="black" />
+                      <Form>
+                        <Button color="inherit">Box Score</Button>
+                      </Form>
+                    </Box>
+                  </Card>
+                </Grid>
+              </Grid>
+            </Box>
           </Stack>
         </Box>
       </Box>
