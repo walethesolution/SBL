@@ -1,12 +1,15 @@
 import {
   Box,
   Grid,
-  Typography,
   Card,
   CardContent,
   Tabs,
   Tab,
+  List,
+  ListItem,
+  ListItemText,
 } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 export default function Stats() {
   return (
@@ -29,25 +32,87 @@ export default function Stats() {
           <Tab value="0" label="Last week's leaders" />
           <Tab value="1" label="Season leaders" />
         </Tabs>
-        <Grid container spacing={25}>
+        <Grid container spacing={10}>
           <Grid item xs={12} sm={6}>
             <Card>
-              <CardContent>Points</CardContent>
+              <CardContent>
+                <Typography variant="h5" align="center">
+                  Points
+                </Typography>
+              </CardContent>
+              <List>
+                <ListItem>
+                  <ListItemText primary="Fuad" secondary="30" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Dariel" secondary="22" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="OG" secondary="24" />
+                </ListItem>
+              </List>
             </Card>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Card>
-              <CardContent>Assists</CardContent>
+              <CardContent>
+                <Typography variant="h5" align="center">
+                  {" "}
+                  Assists
+                </Typography>
+              </CardContent>
+              <List>
+                <ListItem>
+                  <ListItemText primary="Quam" secondary="11" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Steve" secondary="8" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Iman" secondary="7" />
+                </ListItem>
+              </List>
             </Card>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Card>
-              <CardContent>Rebounds</CardContent>
+              <CardContent>
+                <Typography variant="h5" align="center">
+                  {" "}
+                  Rebounds
+                </Typography>
+              </CardContent>
+              <List>
+                <ListItem>
+                  <ListItemText primary="Tianty" secondary="10" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Will" secondary="8" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Victor" secondary="6" />
+                </ListItem>
+              </List>
             </Card>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Card>
-              <CardContent>Blocks</CardContent>
+              <CardContent>
+                <Typography variant="h5" align="center">
+                  Blocks
+                </Typography>
+              </CardContent>
+              <List>
+                <ListItem>
+                  <ListItemText primary="Sam" secondary="4" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Adolo" secondary="26" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="OG" secondary="24" />
+                </ListItem>
+              </List>
             </Card>
           </Grid>
         </Grid>
