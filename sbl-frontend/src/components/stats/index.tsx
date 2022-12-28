@@ -3,10 +3,9 @@ import {
   Grid,
   Typography,
   Card,
-  CardHeader,
+  CardContent,
   Tabs,
   Tab,
-  Stack,
 } from "@mui/material";
 
 export default function Stats() {
@@ -19,35 +18,36 @@ export default function Stats() {
         <Tab value="3" label="Rebounds" />
         <Tab value="4" label="Blocks" />
       </Tabs>
-      <Box>
-        <Grid container>
-          <Grid item>
-            <Typography>Last week's leaders</Typography>
-          </Grid>
-          <Grid item>
-            <Typography> Season leaders</Typography>
-          </Grid>
-        </Grid>
-
-        <Grid container>
-          <Grid item>
+      <Box
+        sx={{
+          marginLeft: "15%",
+          marginTop: "2%",
+          width: "70%",
+        }}
+      >
+        <Tabs>
+          <Tab value="0" label="Last week's leaders" />
+          <Tab value="1" label="Season leaders" />
+        </Tabs>
+        <Grid container spacing={25}>
+          <Grid item xs={12} sm={6}>
             <Card>
-              <CardHeader>Points</CardHeader>
+              <CardContent>Points</CardContent>
             </Card>
           </Grid>
-          <Grid item>
+          <Grid item xs={12} sm={6}>
             <Card>
-              <CardHeader>Assists</CardHeader>
+              <CardContent>Assists</CardContent>
             </Card>
           </Grid>
-          <Grid item>
+          <Grid item xs={12} sm={6}>
             <Card>
-              <CardHeader>Rebounds</CardHeader>
+              <CardContent>Rebounds</CardContent>
             </Card>
           </Grid>
-          <Grid item>
+          <Grid item xs={12} sm={6}>
             <Card>
-              <CardHeader>Blocks</CardHeader>
+              <CardContent>Blocks</CardContent>
             </Card>
           </Grid>
         </Grid>

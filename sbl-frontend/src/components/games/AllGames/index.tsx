@@ -8,8 +8,8 @@ import {
   CardContent,
   Tabs,
   Tab,
+  Stack,
 } from "@mui/material";
-import { Stack } from "@mui/system";
 import { Form } from "react-router-dom";
 import { DummyImage } from "react-simple-placeholder-image";
 
