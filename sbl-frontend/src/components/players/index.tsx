@@ -17,8 +17,8 @@ const dummyStyle = {
 
 export default function Players() {
   return (
-    <Box>
-      <Tabs>
+    <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
+      <Tabs sx={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
         <Tab value="0" label="All Players" />
       </Tabs>
       <Box
