@@ -21,9 +21,6 @@ export default function Header() {
           <NavLink to="/stats">
             <Button color="inherit">Stats</Button>
           </NavLink>
-          <NavLink to="/teams">
-            <Button color="inherit">Teams</Button>
-          </NavLink>
           <NavLink to="/players">
             <Button color="inherit">Players</Button>
           </NavLink>
