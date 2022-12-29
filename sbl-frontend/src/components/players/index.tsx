@@ -21,8 +21,14 @@ export default function Players() {
       <Tabs>
         <Tab value="0" label="All Players" />
       </Tabs>
-      <Box>
-        <Grid container>
+      <Box
+        sx={{
+          marginLeft: "15%",
+          marginTop: "2%",
+          width: "70%",
+        }}
+      >
+        <Grid container justifyContent="space-between">
           <Grid item>
             <Typography variant="h5">LEAGUE ROSTER</Typography>
           </Grid>
@@ -102,6 +108,70 @@ export default function Players() {
                   <Grid item>PG</Grid>
                   <Grid item>5'10</Grid>
                   <Grid item>157lbs</Grid>
+                </Grid>
+              </ListItem>
+              <ListItem>
+                <Grid container>
+                  <Grid item>
+                    <DummyImage
+                      width={50}
+                      height={50}
+                      shape="image"
+                      style={dummyStyle}
+                    />
+                    <Typography>Quam</Typography>
+                  </Grid>
+                  <Grid item>SF</Grid>
+                  <Grid item>6'1</Grid>
+                  <Grid item>192lbs</Grid>
+                </Grid>
+              </ListItem>
+              <ListItem>
+                <Grid container>
+                  <Grid item>
+                    <DummyImage
+                      width={50}
+                      height={50}
+                      shape="image"
+                      style={dummyStyle}
+                    />
+                    <Typography>OG</Typography>
+                  </Grid>
+                  <Grid item>SF</Grid>
+                  <Grid item>6'2</Grid>
+                  <Grid item>187lbs</Grid>
+                </Grid>
+              </ListItem>
+              <ListItem>
+                <Grid container>
+                  <Grid item>
+                    <DummyImage
+                      width={50}
+                      height={50}
+                      shape="image"
+                      style={dummyStyle}
+                    />
+                    <Typography>Will</Typography>
+                  </Grid>
+                  <Grid item>PF</Grid>
+                  <Grid item>6'3</Grid>
+                  <Grid item>210lbs</Grid>
+                </Grid>
+              </ListItem>
+              <ListItem>
+                <Grid container>
+                  <Grid item>
+                    <DummyImage
+                      width={50}
+                      height={50}
+                      shape="image"
+                      style={dummyStyle}
+                    />
+                    <Typography>Sam</Typography>
+                  </Grid>
+                  <Grid item>SF</Grid>
+                  <Grid item>6'3</Grid>
+                  <Grid item>160lbs</Grid>
                 </Grid>
               </ListItem>
             </List>
