@@ -17,7 +17,7 @@ const dummyStyle = {
   borderRadius: 50,
 };
 
-export default function AllGames() {
+export default function Games() {
   return (
     <Box>
       <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
