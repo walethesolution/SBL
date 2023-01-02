@@ -117,7 +117,7 @@ export default function Games() {
                           style={dummyStyle}
                         />
                         <CardContent>
-                          <Typography>TEAM A</Typography>
+                          <Typography>TEAM C</Typography>
                         </CardContent>
                       </Grid>
                       <Grid item>
@@ -132,7 +132,7 @@ export default function Games() {
                           style={dummyStyle}
                         />
                         <CardContent>
-                          <Typography>TEAM B</Typography>
+                          <Typography>TEAM D</Typography>
                         </CardContent>
                       </Grid>
                     </Grid>
