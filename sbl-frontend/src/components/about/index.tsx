@@ -5,6 +5,7 @@ import {
   Tabs,
   Tab,
   Card,
+  CardActionArea,
   CardContent,
 } from "@mui/material";
 import { DummyImage } from "react-simple-placeholder-image";
@@ -51,23 +52,42 @@ export default function About() {
             Friends and family first, competitors next.
           </Typography>
         </Grid>
-      </Grid>
-      <Grid container>
-        <Card variant="outlined">
-          <CardContent>
-            <DummyImage width={200} height={200} shape="image" />
-          </CardContent>
-        </Card>
-        <Card variant="outlined">
-          <CardContent>
-            <DummyImage width={200} height={200} shape="image" />
-          </CardContent>
-        </Card>
-        <Card variant="outlined">
-          <CardContent>
-            <DummyImage width={200} height={200} shape="image" />
-          </CardContent>
-        </Card>
+        <Grid item>
+          <Typography variant="h3" color="text.secondary">
+            Members
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Grid container spacing={4}>
+            <Grid item>
+              <Card variant="elevation">
+                <CardActionArea>
+                  <CardContent>
+                    <DummyImage width={200} height={200} shape="image" />
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+            <Grid item>
+              <Card variant="elevation">
+                <CardActionArea>
+                  <CardContent>
+                    <DummyImage width={200} height={200} shape="image" />
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+            <Grid item>
+              <Card variant="elevation">
+                <CardActionArea>
+                  <CardContent>
+                    <DummyImage width={200} height={200} shape="image" />
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          </Grid>
+        </Grid>
       </Grid>
     </Box>
   );
