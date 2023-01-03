@@ -52,31 +52,57 @@ export default function Games() {
                       }}
                     >
                       <Grid item>
-                        <CardContent> </CardContent>
-                        <DummyImage
-                          width={100}
-                          height={100}
-                          shape="image"
-                          style={dummyStyle}
-                        />
-                        <CardContent>
-                          <Typography>TEAM A</Typography>
-                        </CardContent>
+                        <Grid
+                          container
+                          spacing={2}
+                          sx={{ alignItems: "center" }}
+                        >
+                          <Grid item>
+                            <CardContent> </CardContent>
+                            <DummyImage
+                              width={100}
+                              height={100}
+                              shape="image"
+                              style={dummyStyle}
+                            />
+                            <CardContent>
+                              <Typography>TEAM A</Typography>
+                            </CardContent>
+                          </Grid>
+                          <Grid item>
+                            <CardContent>
+                              <Typography variant="h2">7</Typography>
+                            </CardContent>
+                          </Grid>
+                        </Grid>
                       </Grid>
                       <Grid item>
                         <Typography>FINAL</Typography>
                       </Grid>
                       <Grid item>
-                        <CardContent> </CardContent>
-                        <DummyImage
-                          width={100}
-                          height={100}
-                          shape="image"
-                          style={dummyStyle}
-                        />
-                        <CardContent>
-                          <Typography>TEAM B</Typography>
-                        </CardContent>
+                        <Grid
+                          container
+                          spacing={2}
+                          sx={{ alignItems: "center" }}
+                        >
+                          <Grid item>
+                            <CardContent>
+                              <Typography variant="h2">5</Typography>
+                            </CardContent>
+                          </Grid>
+                          <Grid item>
+                            <CardContent> </CardContent>
+                            <DummyImage
+                              width={100}
+                              height={100}
+                              shape="image"
+                              style={dummyStyle}
+                            />
+                            <CardContent>
+                              <Typography>TEAM B</Typography>
+                            </CardContent>
+                          </Grid>
+                        </Grid>
                       </Grid>
                     </Grid>
                     <Divider variant="middle" />
