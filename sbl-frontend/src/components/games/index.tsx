@@ -147,7 +147,9 @@ export default function Games() {
                         </CardContent>
                       </Grid>
                       <Grid item>
-                        <Typography>FINAL</Typography>
+                        <Stack>
+                          <Typography variant="h4">10:00 AM ET</Typography>
+                        </Stack>
                       </Grid>
                       <Grid item>
                         <CardContent> </CardContent>
@@ -165,7 +167,7 @@ export default function Games() {
                     <Divider variant="middle" />
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                       <Form>
-                        <Button color="inherit">Highlight</Button>
+                        <Button color="inherit">Line-up</Button>
                       </Form>
                       <Divider orientation="vertical" flexItem />
                       <Form>
