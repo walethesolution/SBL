@@ -84,7 +84,7 @@ export default function Games() {
                       <Form>
                         <Button color="inherit">Highlight</Button>
                       </Form>
-                      <Divider orientation="vertical" color="black" />
+                      <Divider orientation="vertical" flexItem />
                       <Form>
                         <Button color="inherit">Box Score</Button>
                       </Form>
@@ -141,7 +141,7 @@ export default function Games() {
                       <Form>
                         <Button color="inherit">Highlight</Button>
                       </Form>
-                      <Divider orientation="vertical" color="black" />
+                      <Divider orientation="vertical" flexItem />
                       <Form>
                         <Button color="inherit">Box Score</Button>
                       </Form>
