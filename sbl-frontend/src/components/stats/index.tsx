@@ -16,10 +16,6 @@ import Footer from "../landing-page/Footer";
 import Header from "../landing-page/Header";
 
 export default function Stats() {
-  const avatarStyle = {
-    borderRadius: "100%",
-  };
-
   return (
     <Box>
       <Header />
@@ -52,20 +48,55 @@ export default function Stats() {
                 </CardContent>
                 <List>
                   <ListItem>
-                    <Grid container>
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
                       <Grid item>
                         <ListItemAvatar>
-                          <Avatar></Avatar>
+                          <Avatar />
                         </ListItemAvatar>
                         <ListItemText primary="Fuad" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h6">30</Typography>
                       </Grid>
                     </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="Dariel" secondary="22" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Dariel" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h6">22</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="OG" secondary="24" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="OG" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h6">20</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                 </List>
               </Card>
@@ -74,19 +105,60 @@ export default function Stats() {
               <Card>
                 <CardContent>
                   <Typography variant="h5" align="center">
-                    {" "}
                     Assists
                   </Typography>
                 </CardContent>
                 <List>
                   <ListItem>
-                    <ListItemText primary="Quam" secondary="11" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Quam" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">11</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="Steve" secondary="8" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Steve" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">8</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="Iman" secondary="7" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Iman" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">7</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                 </List>
               </Card>
@@ -95,19 +167,60 @@ export default function Stats() {
               <Card>
                 <CardContent>
                   <Typography variant="h5" align="center">
-                    {" "}
                     Rebounds
                   </Typography>
                 </CardContent>
                 <List>
                   <ListItem>
-                    <ListItemText primary="Tianty" secondary="10" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Tianty" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">10</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="Will" secondary="8" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Will" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">8</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="Victor" secondary="6" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Victor" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">6</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                 </List>
               </Card>
@@ -121,13 +234,55 @@ export default function Stats() {
                 </CardContent>
                 <List>
                   <ListItem>
-                    <ListItemText primary="Sam" secondary="4" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Sam" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">4</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="Adolo" secondary="26" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="Adolo" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">4</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <ListItem>
-                    <ListItemText primary="OG" secondary="24" />
+                    <Grid
+                      container
+                      justifyContent="space-between"
+                      alignItems="center"
+                    >
+                      <Grid item>
+                        <ListItemAvatar>
+                          <Avatar />
+                        </ListItemAvatar>
+                        <ListItemText primary="OG" />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="h5">3</Typography>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                 </List>
               </Card>

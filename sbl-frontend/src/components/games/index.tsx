@@ -9,15 +9,11 @@ import {
   Tabs,
   Tab,
   Stack,
+  Avatar,
 } from "@mui/material";
 import { Form } from "react-router-dom";
-import { DummyImage } from "react-simple-placeholder-image";
 import Footer from "../landing-page/Footer";
 import Header from "../landing-page/Header";
-
-const dummyStyle = {
-  borderRadius: 50,
-};
 
 export default function Games() {
   return (
@@ -63,12 +59,9 @@ export default function Games() {
                           >
                             <Grid item>
                               <CardContent> </CardContent>
-                              <DummyImage
-                                width={100}
-                                height={100}
-                                shape="image"
-                                style={dummyStyle}
-                              />
+                              <Avatar sx={{ width: 100, height: 100 }}>
+                                A
+                              </Avatar>
                               <CardContent>
                                 <Typography>TEAM A</Typography>
                               </CardContent>
@@ -96,12 +89,9 @@ export default function Games() {
                             </Grid>
                             <Grid item>
                               <CardContent> </CardContent>
-                              <DummyImage
-                                width={100}
-                                height={100}
-                                shape="image"
-                                style={dummyStyle}
-                              />
+                              <Avatar sx={{ width: 100, height: 100 }}>
+                                B
+                              </Avatar>
                               <CardContent>
                                 <Typography>TEAM B</Typography>
                               </CardContent>
@@ -142,12 +132,7 @@ export default function Games() {
                       >
                         <Grid item>
                           <CardContent> </CardContent>
-                          <DummyImage
-                            width={100}
-                            height={100}
-                            shape="image"
-                            style={dummyStyle}
-                          />
+                          <Avatar sx={{ width: 100, height: 100 }}>C</Avatar>
                           <CardContent>
                             <Typography>TEAM C</Typography>
                           </CardContent>
@@ -159,12 +144,7 @@ export default function Games() {
                         </Grid>
                         <Grid item>
                           <CardContent> </CardContent>
-                          <DummyImage
-                            width={100}
-                            height={100}
-                            shape="image"
-                            style={dummyStyle}
-                          />
+                          <Avatar sx={{ width: 100, height: 100 }}>D</Avatar>
                           <CardContent>
                             <Typography>TEAM D</Typography>
                           </CardContent>
