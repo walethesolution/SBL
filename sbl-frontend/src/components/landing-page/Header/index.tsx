@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <AppBar position="fixed" style={{ backgroundColor: "black" }}>
       <Toolbar>
-        <IconButton color="inherit">SBL</IconButton>
+        <NavLink to="/" style={navStyles}>
+          <IconButton color="inherit">SBL</IconButton>
+        </NavLink>
         <Stack
           direction="row"
           spacing={4}
