@@ -4,7 +4,7 @@ import Footer from "../landing-page/Footer";
 import { Box } from "@mui/material";
 import FirstPage from "../firstpage";
 
-const Layout: React.FC = () => {
+export default function Layout() {
   return (
     <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
       <Header />
@@ -12,6 +12,4 @@ const Layout: React.FC = () => {
       <Footer />
     </Box>
   );
-};
-
-export default Layout;
+}
