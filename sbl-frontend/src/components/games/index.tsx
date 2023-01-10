@@ -18,7 +18,6 @@ import Header from "../landing-page/Header";
 export default function Games() {
   return (
     <Box>
-      <Header />
       <Box>
         <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
           <Tabs style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
@@ -170,7 +169,6 @@ export default function Games() {
           </Box>
         </Box>
       </Box>
-      <Footer />
     </Box>
   );
 }
