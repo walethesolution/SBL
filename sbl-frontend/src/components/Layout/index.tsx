@@ -9,11 +9,11 @@ export default function Layout() {
   return (
     <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
       <Header />
-      <FirstPage />
-      <Footer />
+      {/* <FirstPage /> */}
       <Box>
         <Outlet />
       </Box>
+      <Footer />
     </Box>
   );
 }

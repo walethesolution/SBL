@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import { DummyImage } from "react-simple-placeholder-image";
 import Header from "../landing-page/Header";
-import Footer from "../landing-page/Footer";
 
 export default function About() {
   return (
@@ -94,7 +93,6 @@ export default function About() {
           </Grid>
         </Grid>
       </Box>
-      <Footer />
     </Box>
   );
 }

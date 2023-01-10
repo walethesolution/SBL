@@ -18,12 +18,13 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     errorElement: <ErrorPage />,
-    children: [],
+    children: [
+      { path: "/games", element: <Games /> },
+      { path: "/about", element: <About /> },
+      { path: "/stats", element: <Stats /> },
+      { path: "/players", element: <Players /> },
+    ],
   },
-  { path: "/games", element: <Games /> },
-  { path: "/about", element: <About /> },
-  { path: "/stats", element: <Stats /> },
-  { path: "/players", element: <Players /> },
 ]);
 
 export default function App() {
