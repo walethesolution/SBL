@@ -12,13 +12,10 @@ import {
   Avatar,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import Footer from "../landing-page/Footer";
-import Header from "../landing-page/Header";
 
 export default function Stats() {
   return (
     <Box>
-      <Header />
       <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
         <Tabs style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
           <Tab value="0" label="All stats" />
@@ -290,7 +287,6 @@ export default function Stats() {
           </Grid>
         </Box>
       </Box>
-      <Footer />
     </Box>
   );
 }

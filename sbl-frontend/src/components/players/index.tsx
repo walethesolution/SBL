@@ -11,13 +11,9 @@ import {
 } from "@mui/material";
 import Divider from "@mui/material/Divider";
 
-import Footer from "../landing-page/Footer";
-import Header from "../landing-page/Header";
-
 export default function Players() {
   return (
     <Box>
-      <Header />
       <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
         <Tabs sx={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
           <Tab value="0" label="All Players" />
@@ -141,7 +137,6 @@ export default function Players() {
           </Box>
         </Box>
       </Box>
-      <Footer />
     </Box>
   );
 }

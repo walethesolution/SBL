@@ -3,6 +3,7 @@ import Header from "../landing-page/Header";
 import Footer from "../landing-page/Footer";
 import { Box } from "@mui/material";
 import FirstPage from "../firstpage";
+import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
@@ -10,6 +11,9 @@ export default function Layout() {
       <Header />
       <FirstPage />
       <Footer />
+      <Box>
+        <Outlet />
+      </Box>
     </Box>
   );
 }
