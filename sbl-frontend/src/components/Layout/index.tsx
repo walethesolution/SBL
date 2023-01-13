@@ -13,25 +13,25 @@ import { Outlet } from "react-router-dom";
 export default function Layout({ page }: { page: string }) {
   let component;
 
-  // switch (page) {
-  //   case "home":
-  //     component = <FirstPage />;
-  //     break;
-  //   case "about":
-  //     component = <About />;
-  //     break;
-  //   case "games":
-  //     component = <Games />;
-  //     break;
-  //   case "stats":
-  //     component = <Stats />;
-  //     break;
-  //   case "players":
-  //     component = <Players />;
-  //     break;
-  //   default:
-  //     component = <ErrorPage />;
-  // }
+  switch (page) {
+    case "home":
+      component = <FirstPage />;
+      break;
+    case "about":
+      component = <About />;
+      break;
+    case "games":
+      component = <Games />;
+      break;
+    case "stats":
+      component = <Stats />;
+      break;
+    case "players":
+      component = <Players />;
+      break;
+    default:
+      component = <ErrorPage />;
+  }
 
   return (
     <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
