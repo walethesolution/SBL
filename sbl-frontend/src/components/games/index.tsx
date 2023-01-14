@@ -11,9 +11,6 @@ import {
   Stack,
   Avatar,
 } from "@mui/material";
-import { Form } from "react-router-dom";
-import Footer from "../landing-page/Footer";
-import Header from "../landing-page/Header";
 
 export default function Games() {
   return (
@@ -102,13 +99,9 @@ export default function Games() {
                       <Box
                         sx={{ display: "flex", justifyContent: "space-evenly" }}
                       >
-                        <Form>
-                          <Button color="inherit">Highlight</Button>
-                        </Form>
+                        <Button color="inherit">Highlight</Button>
                         <Divider orientation="vertical" flexItem />
-                        <Form>
-                          <Button color="inherit">Box Score</Button>
-                        </Form>
+                        <Button color="inherit">Box Score</Button>
                       </Box>
                     </Card>
                   </Grid>
@@ -153,13 +146,9 @@ export default function Games() {
                       <Box
                         sx={{ display: "flex", justifyContent: "space-evenly" }}
                       >
-                        <Form>
-                          <Button color="inherit">Line-up</Button>
-                        </Form>
+                        <Button color="inherit">Line-up</Button>
                         <Divider orientation="vertical" flexItem />
-                        <Form>
-                          <Button color="inherit">Box Score</Button>
-                        </Form>
+                        <Button color="inherit">Box Score</Button>
                       </Box>
                     </Card>
                   </Grid>
