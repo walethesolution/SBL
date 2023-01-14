@@ -2,17 +2,18 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Box } from "@mui/material";
 import Layout from "./components/Layout";
 import ErrorPage from "./components/errors";
+import Games from "./components/games";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout page="home" />,
+    element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/games", element: <Layout page="games" /> },
-      { path: "/about", element: <Layout page="about" /> },
-      { path: "/stats", element: <Layout page="stats" /> },
-      { path: "/players", element: <Layout page="players" /> },
+      { path: "/games", element: "" },
+      { path: "/about", element: "" },
+      { path: "/stats", element: "" },
+      { path: "/players", element: "" },
     ],
   },
 ]);

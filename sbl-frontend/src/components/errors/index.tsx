@@ -26,7 +26,7 @@ export default function ErrorPage() {
         </Grid>
         <Grid item>
           <Typography variant="h6">
-            <i>{error.data || error.message}</i>
+            <i>{error.statusText || error.message}</i>
           </Typography>
         </Grid>
       </Grid>
