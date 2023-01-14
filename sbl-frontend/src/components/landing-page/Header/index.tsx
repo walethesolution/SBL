@@ -6,7 +6,7 @@ export default function Header() {
   const navStyles = { color: "white", textDecoration: "none" };
 
   return (
-    <AppBar position="fixed" style={{ backgroundColor: "black" }}>
+    <AppBar position="static" style={{ backgroundColor: "black" }}>
       <Toolbar>
         <NavLink to="/" style={navStyles}>
           <IconButton color="inherit">SBL</IconButton>

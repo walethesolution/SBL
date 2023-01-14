@@ -1,27 +1,31 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material";
-import Layout from "./components/Layout";
+import Header from "./components/landing-page/Header";
+import Footer from "./components/landing-page/Footer";
 import ErrorPage from "./components/errors";
 import Games from "./components/games";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    errorElement: <ErrorPage />,
-    children: [
-      { path: "/games", element: "" },
-      { path: "/about", element: "" },
-      { path: "/stats", element: "" },
-      { path: "/players", element: "" },
-    ],
-  },
-]);
+import FirstPage from "./components/firstpage";
+import About from "./components/about";
+import Blog from "./components/blog";
+import Stats from "./components/stats";
+import Players from "./components/players";
 
 export default function App() {
   return (
-    <Box>
-      <RouterProvider router={router} />
-    </Box>
+    <BrowserRouter>
+      <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<FirstPage />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/stats" element={<Stats />} />
+          <Route path="/players" element={<Players />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </Box>
+    </BrowserRouter>
   );
 }

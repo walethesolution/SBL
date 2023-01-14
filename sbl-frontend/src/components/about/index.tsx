@@ -9,12 +9,10 @@ import {
   CardContent,
 } from "@mui/material";
 import { DummyImage } from "react-simple-placeholder-image";
-import Header from "../landing-page/Header";
 
 export default function About() {
   return (
     <Box>
-      <Header />
       <Box
         sx={{
           display: "flex",
