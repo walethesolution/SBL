@@ -12,12 +12,11 @@ import {
   Avatar,
   AppBar,
 } from "@mui/material";
-import GameSubBar from "./gameSubNav";
 
 export default function Games() {
   return (
     <Box>
-      <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
+      <Box>
         <Tabs style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
           <Tab value="0" label="All games" />
           <Tab value="1" label="Highlight of the week" />

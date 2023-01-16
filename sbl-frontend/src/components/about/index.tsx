@@ -17,7 +17,6 @@ export default function About() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "rgba(55, 146, 211, 0.08)",
         }}
       >
         <Tabs style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
