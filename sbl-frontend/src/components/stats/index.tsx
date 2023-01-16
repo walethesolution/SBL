@@ -11,7 +11,7 @@ import {
   ListItemText,
   ListItemAvatar,
   Avatar,
-  Stack,
+  Divider,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
@@ -31,27 +31,44 @@ export default function Stats() {
             marginLeft: "13%",
             marginTop: "4%",
             width: "75%",
-            backgroundColor: "white",
           }}
         >
-          <Grid container spacing={4} flexDirection="column">
+          <Grid container spacing={2} flexDirection="column">
             <Grid item>
               <Grid
                 container
                 sx={{
-                  borderRadius: "5px",
-                  backgroundColor: "black",
+                  backgroundColor: "white",
+                  borderRadius: "4px",
                 }}
-                justifyContent="center"
               >
-                <Grid item>
+                <Grid
+                  item
+                  xs={6}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: "black",
+                  }}
+                >
                   <Button>
-                    <Typography>Current week's leaders</Typography>
+                    <Typography color="white">
+                      Current week's leaders
+                    </Typography>
                   </Button>
                 </Grid>
-                <Grid item>
+                <Grid
+                  item
+                  xs={6}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
                   <Button>
-                    <Typography>Season leaders</Typography>
+                    <Typography color="black">Season leaders</Typography>
                   </Button>
                 </Grid>
               </Grid>
@@ -65,6 +82,7 @@ export default function Stats() {
                         Points
                       </Typography>
                     </CardContent>
+                    <Divider />
                     <List>
                       <ListItem>
                         <Grid
@@ -127,6 +145,7 @@ export default function Stats() {
                         Assists
                       </Typography>
                     </CardContent>
+                    <Divider />
                     <List>
                       <ListItem>
                         <Grid
@@ -189,6 +208,7 @@ export default function Stats() {
                         Rebounds
                       </Typography>
                     </CardContent>
+                    <Divider />
                     <List>
                       <ListItem>
                         <Grid
@@ -251,6 +271,7 @@ export default function Stats() {
                         Blocks
                       </Typography>
                     </CardContent>
+                    <Divider />
                     <List>
                       <ListItem>
                         <Grid
