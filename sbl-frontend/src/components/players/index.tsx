@@ -20,22 +20,24 @@ export default function Players() {
         </Tabs>
         <Box
           sx={{
-            marginLeft: "15%",
-            marginTop: "2%",
-            width: "70%",
+            marginLeft: "13%",
+            marginTop: "4%",
+            width: "75%",
             backgroundColor: "white",
           }}
         >
-          <Grid container justifyContent="space-between">
-            <Grid item>
-              <Typography variant="h5">LEAGUE ROSTER</Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="h5">filter</Typography>
-            </Grid>
-          </Grid>
-          <Divider />
           <Box>
+            <Grid container justifyContent="space-between">
+              <Grid item>
+                <Typography variant="h5">LEAGUE ROSTER</Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="h6">filter</Typography>
+              </Grid>
+            </Grid>
+          </Box>
+          {/* <Divider /> */}
+          <Box sx={{ marginTop: "4%" }}>
             <Stack>
               <Tabs>
                 <Tab value="0" label="Player" />
@@ -43,6 +45,7 @@ export default function Players() {
                 <Tab value="2" label="HT" />
                 <Tab value="3" label="WT" />
               </Tabs>
+              {/* <Divider /> */}
               <List>
                 <ListItem>
                   <Grid container>
@@ -55,6 +58,7 @@ export default function Players() {
                     <Grid item>162lbs</Grid>
                   </Grid>
                 </ListItem>
+                {/* <Divider /> */}
                 <ListItem>
                   <Grid container>
                     <Grid item>
