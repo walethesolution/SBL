@@ -32,9 +32,11 @@ export default function Header() {
             <Button color="inherit">Blog</Button>
           </NavLink>
         </Stack>
-        <Button color="inherit" style={navStyles}>
-          <ShoppingCartTwoToneIcon />
-        </Button>
+        <NavLink to="/shop" style={navStyles}>
+          <Button color="inherit">
+            <ShoppingCartTwoToneIcon />
+          </Button>
+        </NavLink>
         <Button color="inherit">Sign In</Button>
       </Toolbar>
     </AppBar>
