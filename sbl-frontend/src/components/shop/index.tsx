@@ -7,9 +7,12 @@ export default function Shop() {
         <Grid
           container
           spacing={4}
-          sx={{ alignItems: "center", justifyContent: "center" }}
+          sx={{
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          <Grid item>
+          <Grid item xs={12} md={12}>
             <Typography variant="h4">
               League Store is under construction.
             </Typography>
