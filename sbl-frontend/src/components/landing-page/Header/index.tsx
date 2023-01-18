@@ -35,7 +35,7 @@ export default function Header() {
         <Button color="inherit" style={navStyles}>
           <ShoppingCartTwoToneIcon />
         </Button>
-        <Button color="inherit">User SignIn</Button>
+        <Button color="inherit">Sign In</Button>
       </Toolbar>
     </AppBar>
   );

@@ -27,11 +27,7 @@ export default function Players() {
           }}
         >
           <Box>
-            {/* <Stack> */}
-            {/* <Grid container>
-                <Grid item> */}
             <Typography variant="h6">LEAGUE ROSTER</Typography>
-
             <Typography variant="h6">filter</Typography>
             <Tabs>
               <Tab value="0" label="Player" />

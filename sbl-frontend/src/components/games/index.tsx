@@ -10,7 +10,6 @@ import {
   Tab,
   Stack,
   Avatar,
-  AppBar,
 } from "@mui/material";
 
 export default function Games() {
