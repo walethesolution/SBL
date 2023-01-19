@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, Tabs, Tab } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 export default function Shop() {
   return (
