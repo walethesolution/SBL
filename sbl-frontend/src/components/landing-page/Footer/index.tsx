@@ -7,10 +7,13 @@ import {
   Typography,
   Divider,
   Grid,
+  Link,
 } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+
+const socialIconStyle = { color: "#FFFFFF" };
 
 export default function Footer() {
   return (
@@ -32,15 +35,33 @@ export default function Footer() {
             </Stack>
             <Stack>
               <Typography variant="inherit">Follow us</Typography>
-              <Button color="inherit">
-                <InstagramIcon />
-              </Button>
-              <Button color="inherit">
-                <TwitterIcon />
-              </Button>
-              <Button color="inherit">
-                <YouTubeIcon />
-              </Button>
+              <Link
+                href="https://www.instagram.com"
+                target="_blank"
+                style={socialIconStyle}
+              >
+                <Button color="inherit">
+                  <InstagramIcon />
+                </Button>
+              </Link>
+              <Link
+                href="https://www.twitter.com"
+                target="_blank"
+                style={socialIconStyle}
+              >
+                <Button color="inherit">
+                  <TwitterIcon />
+                </Button>
+              </Link>
+              <Link
+                href="https://www.youtube.com"
+                target="_blank"
+                style={socialIconStyle}
+              >
+                <Button color="inherit">
+                  <YouTubeIcon />
+                </Button>
+              </Link>
             </Stack>
           </Grid>
         </Toolbar>
@@ -53,7 +74,7 @@ export default function Footer() {
               justifyContent: "start",
             }}
           >
-            (c) 2022 Sunday Balling League. All rights reserved
+            &#169; 2022 Sunday Balling League. All rights reserved
           </Typography>
         </Toolbar>
       </AppBar>
