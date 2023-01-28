@@ -1,5 +1,4 @@
 import { AppBar, Button, IconButton, Stack, Toolbar } from "@mui/material";
-import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
@@ -32,11 +31,6 @@ export default function Header() {
             <Button color="inherit">Blog</Button>
           </NavLink>
         </Stack>
-        <NavLink to="/shop" style={navStyles}>
-          <Button color="inherit">
-            <ShoppingCartTwoToneIcon />
-          </Button>
-        </NavLink>
         <NavLink to="/signIn" style={navStyles}>
           <Button color="inherit">Sign In</Button>
         </NavLink>
