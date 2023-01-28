@@ -32,7 +32,6 @@ export default function Headline() {
             variant="contained"
             sx={{
               marginTop: "40px",
-              borderRadius: "50px",
             }}
             style={buttonStyles}
             size="large"

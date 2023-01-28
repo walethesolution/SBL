@@ -43,7 +43,6 @@ export default function About() {
           variant="contained"
           sx={{
             marginTop: "40px",
-            borderRadius: "50px",
           }}
         >
           Members
