@@ -4,7 +4,7 @@ import mainPic from "../../../assets/headlinePic.jpg";
 export default function Headline() {
   const imageStyles = {
     width: "643px",
-    height: "725px",
+    height: "720px",
     marginBottom: "30px",
   };
 

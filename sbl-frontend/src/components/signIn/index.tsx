@@ -7,14 +7,13 @@ import {
   Stack,
   Link,
 } from "@mui/material";
-import makeStyles from "@mui/material/styles";
 
 export default function SignIn() {
   return (
     <Box sx={{ marginLeft: "30%", marginTop: "5%" }}>
       <Grid container spacing={4} direction="column" width="60%">
         <Grid item xs={12} md={6}>
-          <Typography variant="h3">SBL MEMBERS sign in</Typography>
+          <Typography variant="h4">MEMBERS sign in</Typography>
         </Grid>
 
         <Grid item xs={12} md={6}>
