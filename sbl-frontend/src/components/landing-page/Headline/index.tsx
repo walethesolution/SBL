@@ -1,7 +1,15 @@
 import { Typography, Box, Button, Grid } from "@mui/material";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
 import mainPic from "../../../assets/headlinePic.jpg";
 
 export default function Headline() {
+  const navigate = useNavigate();
+
+  // function handleClick() {
+  //   history.push("./signIn");
+  // }
+
   const imageStyles = {
     width: "643px",
     height: "720px",
@@ -35,12 +43,13 @@ export default function Headline() {
             }}
             style={buttonStyles}
             size="large"
+            onClick={() => navigate("/signIn")}
           >
             Come join us
           </Button>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img src={mainPic} alt="My Team" style={imageStyles} />
+          <LazyLoadImage src={mainPic} style={imageStyles} />
         </Grid>
       </Grid>
     </Box>

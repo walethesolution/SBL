@@ -1,6 +1,9 @@
 import { Box, Typography, Button, Grid } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+  const navigate = useNavigate();
+
   const buttonStyle = { width: "25%" };
 
   return (
@@ -44,6 +47,7 @@ export default function About() {
           sx={{
             marginTop: "40px",
           }}
+          onClick={() => navigate("/about")}
         >
           Members
         </Button>
