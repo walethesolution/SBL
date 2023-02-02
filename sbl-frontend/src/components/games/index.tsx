@@ -18,7 +18,7 @@ export default function Games() {
       <Box>
         <Tabs style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
           <Tab value="0" label="All games" />
-          <Tab value="1" label="Highlight of the week" />
+          <Tab value="1" label="Upcoming games" />
         </Tabs>
         <Box
           sx={{
