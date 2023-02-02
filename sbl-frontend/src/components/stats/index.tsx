@@ -19,7 +19,7 @@ export default function Stats() {
   return (
     <Box>
       <Box>
-        <Tabs style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
+        <Tabs style={{ backgroundColor: "background.paper" }}>
           <Tab value="0" label="All stats" />
           <Tab value="1" label="Points" />
           <Tab value="2" label="Assists" />

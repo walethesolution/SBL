@@ -19,7 +19,7 @@ export default function About() {
           flexDirection: "column",
         }}
       >
-        <Tabs style={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
+        <Tabs style={{ backgroundColor: "background.paper" }}>
           <Tab value="0" label="About" />
         </Tabs>
         <Grid

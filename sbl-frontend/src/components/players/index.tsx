@@ -9,13 +9,12 @@ import {
   ListItem,
   Avatar,
 } from "@mui/material";
-import Divider from "@mui/material/Divider";
 
 export default function Players() {
   return (
     <Box>
       <Box>
-        <Tabs sx={{ backgroundColor: "rgba(128, 128, 128, 0.30)" }}>
+        <Tabs style={{ backgroundColor: "background.paper" }}>
           <Tab value="0" label="All Players" />
         </Tabs>
         <Box
