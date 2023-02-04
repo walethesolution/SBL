@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   Box,
   Button,
@@ -15,7 +16,35 @@ import {
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
+// Tab panel component to render the contents of each tab panel
+interface TabPanelProps {
+  children?: React.ReactNode; // the content to be rendered by the tab panel
+  index: number; // this is to identify which tab panel corresponds to each tab
+  value: number; // this is to keep track of the currently selected tab
+}
+
+function TabPanel(props: TabPanelProps) {
+  const { children, index, value } = props;
+
+  return (
+    <Box
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+    >
+      {value === index && <Box>{children}</Box>}
+    </Box>
+  );
+}
+
 export default function Stats() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    setValue(newValue);
+  };
+
   return (
     <Box>
       <Box>
