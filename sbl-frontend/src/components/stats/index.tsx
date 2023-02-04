@@ -15,36 +15,8 @@ import {
   Divider,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
-
-// Tab panel component to render the contents of each tab panel
-interface TabPanelProps {
-  children?: React.ReactNode; // the content to be rendered by the tab panel
-  index: number; // this is to identify which tab panel corresponds to each tab
-  value: number; // this is to keep track of the currently selected tab
-}
-
-function TabPanel(props: TabPanelProps) {
-  const { children, index, value, ...other } = props;
-
-  return (
-    <Box
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && <Box>{children}</Box>}
-    </Box>
-  );
-}
-
-function a11yProps(index: number) {
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  };
-}
+import TabPanel from "../tabPanel";
+import { a11yProps } from "../../utils";
 
 export default function Stats() {
   const [value, setValue] = React.useState(0);
