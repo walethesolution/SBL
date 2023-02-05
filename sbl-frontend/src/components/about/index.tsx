@@ -19,9 +19,6 @@ export default function About() {
           flexDirection: "column",
         }}
       >
-        <Tabs style={{ backgroundColor: "background.paper" }}>
-          <Tab value="0" label="About" />
-        </Tabs>
         <Grid
           container
           sx={{
