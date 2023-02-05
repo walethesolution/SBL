@@ -3,9 +3,6 @@ import { Box, Grid, Typography, Tabs, Tab } from "@mui/material";
 export default function Blog() {
   return (
     <Box>
-      <Tabs style={{ backgroundColor: "background.paper" }}>
-        <Tab value="0" label="Blog" />
-      </Tabs>
       <Box sx={{ margin: 25 }}>
         <Grid
           container
