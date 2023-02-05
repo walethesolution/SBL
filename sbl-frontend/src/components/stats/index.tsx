@@ -408,6 +408,195 @@ export default function Stats() {
               </List>
             </Card>
           </TabPanel>
+          <TabPanel value={value} index={2}>
+            <Card>
+              <CardContent>
+                <Typography variant="h5" align="center">
+                  Assists
+                </Typography>
+              </CardContent>
+              <Divider />
+              <List>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Quam" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">11</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Steve" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">8</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Iman" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">7</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+              </List>
+            </Card>
+          </TabPanel>
+          <TabPanel value={value} index={3}>
+            <Card>
+              <CardContent>
+                <Typography variant="h5" align="center">
+                  Rebounds
+                </Typography>
+              </CardContent>
+              <Divider />
+              <List>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Tianty" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">10</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Will" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">8</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Victor" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">6</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+              </List>
+            </Card>
+          </TabPanel>
+          <TabPanel value={value} index={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="h5" align="center">
+                  Blocks
+                </Typography>
+              </CardContent>
+              <Divider />
+              <List>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Sam" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">4</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="Adolo" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">4</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem>
+                  <Grid
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <ListItemAvatar>
+                        <Avatar />
+                      </ListItemAvatar>
+                      <ListItemText primary="OG" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h5">3</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+              </List>
+            </Card>
+          </TabPanel>
         </Box>
       </Box>
     </Box>
