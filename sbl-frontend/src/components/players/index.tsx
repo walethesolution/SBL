@@ -14,9 +14,6 @@ export default function Players() {
   return (
     <Box>
       <Box>
-        <Tabs style={{ backgroundColor: "background.paper" }}>
-          <Tab value="0" label="All Players" />
-        </Tabs>
         <Box
           sx={{
             marginLeft: "13%",
@@ -26,14 +23,9 @@ export default function Players() {
           }}
         >
           <Box>
-            <Typography variant="h6">LEAGUE ROSTER</Typography>
-            <Typography variant="h6">filter</Typography>
-            <Tabs>
-              <Tab value="0" label="Player" />
-              <Tab value="1" label="POS" />
-              <Tab value="2" label="HT" />
-              <Tab value="3" label="WT" />
-            </Tabs>
+            <Typography variant="h6" style={{ textAlign: "center" }}>
+              LEAGUE ROSTER
+            </Typography>
             <List>
               <ListItem>
                 <Grid container>
