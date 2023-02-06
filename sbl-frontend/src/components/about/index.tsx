@@ -15,20 +15,12 @@ export default function About() {
     <Box>
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "column",
+          marginLeft: "13%",
+          marginTop: "4%",
+          width: "75%",
         }}
       >
-        <Grid
-          container
-          sx={{
-            marginTop: "40px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-          spacing={4}
-        >
+        <Grid container spacing={4}>
           <Grid item>
             <Typography variant="h3" fontWeight="550">
               WHO WE ARE
@@ -47,11 +39,6 @@ export default function About() {
             </Typography>
             <Typography variant="h6" color="text.secondary">
               Friends and family first, competitors next.
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography variant="h3" color="text.secondary">
-              Members
             </Typography>
           </Grid>
           <Grid item>

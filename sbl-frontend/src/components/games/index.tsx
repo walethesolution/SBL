@@ -35,9 +35,9 @@ export default function Games() {
         </Tabs>
         <Box
           sx={{
-            marginLeft: "15%",
-            marginTop: "2%",
-            width: "70%",
+            marginLeft: "13%",
+            marginTop: "4%",
+            width: "75%",
           }}
         >
           <Stack>
