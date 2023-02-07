@@ -14,12 +14,24 @@ import {
 } from "@mui/material";
 import TabPanel from "../tabPanel";
 import { a11yProps } from "../../utils";
+import dayjs from "dayjs";
+import TextField from "@mui/material/TextField";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 
 export default function Games() {
   const [value, setValue] = React.useState(0);
+  const [dateValue, setDateValue] = React.useState(
+    dayjs("2014-08-18T21:11:54")
+  );
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
+  };
+
+  const handleDateChange = (newDateValue: any) => {
+    setDateValue(newDateValue);
   };
 
   return (
@@ -42,7 +54,17 @@ export default function Games() {
         >
           <Stack>
             <Card>
-              <CardContent>Month, Year</CardContent>
+              <CardContent>
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                  <DesktopDatePicker
+                    label="Date desktop"
+                    inputFormat="MM/DD/YYYY"
+                    value={dateValue}
+                    onChange={handleDateChange}
+                    renderInput={(params) => <TextField {...params} />}
+                  />
+                </LocalizationProvider>
+              </CardContent>
             </Card>
             <TabPanel value={value} index={0}>
               <Box>
