@@ -31,8 +31,8 @@ function createData(
       {
         birthdate: "11-07-1997",
         countryOfOrigin: "Nigeria",
-        experience: 7,
         nickname: "The Solution",
+        experience: 7,
       },
     ],
   };
@@ -73,6 +73,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
                   <TableRow>
                     <TableCell>Birth Date</TableCell>
                     <TableCell>Country Of Origin</TableCell>
+                    <TableCell>Nickname</TableCell>
                     <TableCell align="right">Experience</TableCell>
                   </TableRow>
                 </TableHead>
@@ -83,6 +84,9 @@ function Row(props: { row: ReturnType<typeof createData> }) {
                         {historyRow.birthdate}
                       </TableCell>
                       <TableCell>{historyRow.countryOfOrigin}</TableCell>
+                      <TableCell component="th" scope="row">
+                        {historyRow.nickname}
+                      </TableCell>
                       <TableCell align="right">
                         {historyRow.experience}
                       </TableCell>
