@@ -31,9 +31,6 @@ export default function Header() {
             <Button color="inherit">Blog</Button>
           </NavLink>
         </Stack>
-        <NavLink to="/signIn" style={navStyles}>
-          <Button color="inherit">Sign In</Button>
-        </NavLink>
       </Toolbar>
     </AppBar>
   );

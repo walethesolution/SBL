@@ -6,7 +6,7 @@ export default function ErrorPage() {
   console.error(error);
 
   return (
-    <Box sx={{}}>
+    <Box>
       <Grid
         container
         spacing={2}

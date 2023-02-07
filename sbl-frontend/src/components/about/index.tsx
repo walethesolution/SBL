@@ -2,8 +2,6 @@ import {
   Box,
   Typography,
   Grid,
-  Tabs,
-  Tab,
   Card,
   CardActionArea,
   CardContent,
