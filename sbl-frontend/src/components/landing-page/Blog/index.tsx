@@ -3,10 +3,42 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, Button, CardActionArea, CardActions, Grid } from "@mui/material";
-import TheBoys from "../../../assets/fall-ball3.jpg";
+// import TheBoys from "../../../assets/fall-ball3.jpg";
 import TreesnCourt from "../../../assets/TreesnCourt.jpg";
+import dataB from "../../../data/db.json";
 
 export default function Blog() {
+  const data = dataB;
+  const firstBlog = data.blogs.find((blog) => blog.id === 1);
+  const secondBlog = data.blogs.find((blog) => blog.id === 2);
+
+  let firstTopic;
+  let firstContext;
+  let firstImage;
+  let secondTopic;
+  let secondContext;
+  let secondImage;
+
+  if (firstBlog) {
+    firstTopic = firstBlog.topic;
+    firstContext = firstBlog.context;
+    firstImage = firstBlog.image;
+  } else {
+    firstTopic = "No topic found";
+    firstContext = "No context here";
+    firstImage = "No image";
+  }
+
+  if (secondBlog) {
+    secondTopic = secondBlog.topic;
+    secondContext = secondBlog.context;
+    secondImage = secondBlog.image;
+  } else {
+    secondTopic = "No topic found";
+    secondContext = "No context here";
+    secondImage = "No image here";
+  }
+
   return (
     <Box sx={{ marginTop: "40px" }}>
       <Typography
@@ -23,16 +55,16 @@ export default function Blog() {
               <CardMedia
                 component="img"
                 height="200"
-                image={TheBoys}
+                image={firstImage}
                 alt="Fall ball"
               />
               <CardContent>
                 <Typography gutterBottom variant="h4" component="div">
-                  Fall
+                  {firstTopic}
                 </Typography>
+
                 <Typography variant="body2" color="text.secondary">
-                  We play all round the year. As long as the sun is out, We are
-                  outside.
+                  {firstContext}
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -54,11 +86,10 @@ export default function Blog() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h4" component="div">
-                  That Miami weather
+                  {secondTopic}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  This time around the view was Miami-esque. You know as long as
-                  the sun is out, We are outside.
+                  {secondContext}
                 </Typography>
               </CardContent>
             </CardActionArea>
