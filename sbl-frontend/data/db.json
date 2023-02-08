@@ -1,0 +1,322 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "firstName": "Olawale",
+      "lastName": "Ayejuyone",
+      "position": "PG",
+      "height": "6'0",
+      "weight": "157 lbs",
+      "history": {
+        "dob": "11-07-1997",
+        "nickName": "The Solution",
+        "countryOfOrigin": "Nigeria",
+        "experience": 7
+      }
+    },
+    {
+      "id": 2,
+      "firstName": "Alexander",
+      "lastName": "Odita",
+      "position": "PF",
+      "height": "6'1",
+      "weight": "192 lbs",
+      "history": {
+        "dob": "05-03-1996",
+        "nickName": "OG",
+        "countryOfOrigin": "Nigeria",
+        "experience": 7
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "Ayodeji",
+      "lastName": "Ibikunle",
+      "position": "SG",
+      "height": "5'9",
+      "weight": "194 lbs",
+      "history": {
+        "dob": "05-03-1995",
+        "nickName": "Akure",
+        "countryOfOrigin": "Nigeria",
+        "experience": 3
+      }
+    },
+    {
+      "id": 4,
+      "firstName": "Eneyeme",
+      "lastName": "Adekoye",
+      "position": "SF",
+      "height": "5'11",
+      "weight": "225 lbs",
+      "history": {
+        "dob": "09-29-1995",
+        "nickName": "Yeme naw",
+        "countryOfOrigin": "Nigeria",
+        "experience": 10
+      }
+    },
+    {
+      "id": 5,
+      "firstName": "Steve",
+      "lastName": "Liadi",
+      "position": "SG",
+      "height": "5'9",
+      "weight": "180 lbs",
+      "history": {
+        "dob": "05-06-1985",
+        "nickName": "Ona (The way)",
+        "countryOfOrigin": "USA",
+        "experience": 22
+      }
+    },
+    {
+      "id": 6,
+      "firstName": "William",
+      "lastName": "Champion",
+      "position": "PF",
+      "height": "6'1",
+      "weight": "280 lbs",
+      "history": {
+        "dob": "05-03-1996",
+        "nickName": "Champ",
+        "countryOfOrigin": "Nigeria",
+        "experience": 7
+      }
+    },
+    {
+      "id": 7,
+      "firstName": "Dariel",
+      "lastName": "Soriano",
+      "postion": "SG",
+      "height": "5'11",
+      "weight": "192 lbs",
+      "history": {
+        "dob": "05-03-1996",
+        "nickName": "OG",
+        "countryOfOrigin": "Nigeria",
+        "experience": 7
+      }
+    },
+    {
+      "id": 8,
+      "firstName": "Samson",
+      "lastName": "Olabimpe",
+      "position": "unknown",
+      "height": "6'2",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 9,
+      "firstName": "Obinna",
+      "lastName": "Ekweremuba",
+      "position": "unknown",
+      "height": "6'2",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 10,
+      "firstName": "Ifeanyi",
+      "lastName": "Ekweremuba",
+      "position": "unknown",
+      "height": "6'2",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 11,
+      "firstName": "Fuad",
+      "lastName": "Bakare",
+      "position": "unknown",
+      "height": "6'2",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 12,
+      "firstName": "Iman",
+      "lastName": "Tesleem",
+      "position": "PG",
+      "height": "5'9",
+      "weight": "165",
+      "history": {
+        "dob": "03-23-2001",
+        "nickName": "unknown",
+        "countryOfOrigin": "Nigeria",
+        "experience": 6
+      }
+    },
+    {
+      "id": 13,
+      "firstName": "Seyi",
+      "lastName": "Adekoye",
+      "position": "unknown",
+      "height": "unknown",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 14,
+      "firstName": "Quam",
+      "lastName": "unknown",
+      "position": "unknown",
+      "height": "unknown",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 15,
+      "firstName": "Rilwan",
+      "lastName": "Bakare",
+      "position": "unknown",
+      "height": "unknown",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "Nigeria",
+        "experience": null
+      }
+    },
+    {
+      "id": 16,
+      "firstName": "Adolo",
+      "lastName": "Aneni",
+      "position": "unknown",
+      "height": "unknown",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 17,
+      "firstName": "Timi",
+      "lastName": "Olufoye",
+      "position": "unknown",
+      "height": "unknown",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 18,
+      "firstName": "Toyosi",
+      "lastName": "Adekoye",
+      "position": "unknown",
+      "height": "unknown",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    },
+    {
+      "id": 19,
+      "firstName": "Adewale",
+      "lastName": "Adekoye",
+      "position": "unknown",
+      "height": "unknown",
+      "weight": "unknown",
+      "history": {
+        "dob": "unknown",
+        "nickName": "unknown",
+        "countryOfOrigin": "unknown",
+        "experience": null
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Team A",
+      "logo": ""
+    },
+    {
+      "id": 2,
+      "name": "Team B",
+      "logo": ""
+    },
+    {
+      "id": 3,
+      "name": "Team C",
+      "logo": ""
+    },
+    {
+      "id": 4,
+      "name": "Team D",
+      "logo": ""
+    },
+    {
+      "id": 5,
+      "name": "Team E",
+      "logo": ""
+    },
+    {
+      "id": 6,
+      "name": "Team F",
+      "logo": ""
+    },
+    {
+      "id": 7,
+      "name": "Team G",
+      "logo": ""
+    },
+    {
+      "id": 8,
+      "name": "Team H",
+      "logo": ""
+    },
+    {
+      "id": 9,
+      "name": "Team I",
+      "logo": ""
+    },
+    {
+      "id": 10,
+      "name": "Team J",
+      "logo": ""
+    }
+  ]
+}

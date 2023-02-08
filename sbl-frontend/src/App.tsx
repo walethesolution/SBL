@@ -9,7 +9,6 @@ import About from "./components/about";
 import Blog from "./components/blog";
 import Stats from "./components/stats";
 import Players from "./components/players";
-import SignIn from "./components/signIn";
 
 export default function App() {
   return (
@@ -23,7 +22,6 @@ export default function App() {
           <Route path="/stats" element={<Stats />} />
           <Route path="/players" element={<Players />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/signIn" element={<SignIn />} />
           <Route element={<ErrorPage />} />
         </Routes>
         <Footer />
