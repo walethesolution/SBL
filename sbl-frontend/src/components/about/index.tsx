@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { DummyImage } from "react-simple-placeholder-image";
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <Box>
       <Box
@@ -74,4 +74,6 @@ export default function About() {
       </Box>
     </Box>
   );
-}
+};
+
+export default About;

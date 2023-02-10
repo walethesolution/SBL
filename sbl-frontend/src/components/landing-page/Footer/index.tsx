@@ -15,7 +15,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const socialIconStyle = { color: "#FFFFFF" };
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <Box sx={{ marginTop: "20px" }}>
       <AppBar
@@ -80,4 +80,6 @@ export default function Footer() {
       </AppBar>
     </Box>
   );
-}
+};
+
+export default Footer;

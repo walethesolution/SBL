@@ -4,8 +4,6 @@ import {
   Paper,
   Divider,
   Typography,
-  Collapse,
-  IconButton,
   Table,
   TableBody,
   TableCell,
@@ -15,16 +13,19 @@ import {
 } from "@mui/material";
 import Row from "../row";
 import { createData } from "../../utils";
+import dataB from "../../data/db.json";
 
-const rows = [
-  createData("Olawale Ayejuyone", "SG", "6'0", "158 lbs"),
-  createData("Alexander Odita", "SF", "6'2", "198 lbs"),
-  createData("Dariel Soriano", "SG", "5'11", "187 lbs"),
-  createData("Steve Liadi", "PG", "6'2", "170 lbs"),
-  createData("Will Champion", "PF", "6'2", "228 lbs"),
-];
+const players = dataB.players;
 
-export default function PlayerTable() {
+// const rows = [
+//   createData(1, "Olawale Ayejuyone", "SG", "6'0", "158 lbs"),
+//   createData(2, "Alexander Odita", "SF", "6'2", "198 lbs"),
+//   createData(3, "Dariel Soriano", "SG", "5'11", "187 lbs"),
+//   createData(4, "Steve Liadi", "PG", "6'2", "170 lbs"),
+//   createData(5, "Will Champion", "PF", "6'2", "228 lbs"),
+// ];
+
+const Players: React.FC = () => {
   return (
     <Box
       sx={{
@@ -51,12 +52,14 @@ export default function PlayerTable() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
-              <Row key={row.name} row={row} />
-            ))}
+            {/* {players.map((player) => (
+              // <Row key={player.firstName} player={player} />
+            ))} */}
           </TableBody>
         </Table>
       </TableContainer>
     </Box>
   );
-}
+};
+
+export default Players;

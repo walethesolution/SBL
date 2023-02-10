@@ -1,7 +1,7 @@
 import { AppBar, Button, IconButton, Stack, Toolbar } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
-export default function Header() {
+const Header: React.FC = () => {
   const navStyles = { color: "white", textDecoration: "none" };
 
   return (
@@ -34,4 +34,6 @@ export default function Header() {
       </Toolbar>
     </AppBar>
   );
-}
+};
+
+export default Header;

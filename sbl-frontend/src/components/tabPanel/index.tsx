@@ -7,7 +7,7 @@ interface TabPanelProps {
   value: number;
 }
 
-export default function TabPanel(props: TabPanelProps) {
+const TabPanel: React.FC<TabPanelProps> = (props) => {
   const { children, index, value, ...other } = props;
 
   return (
@@ -21,4 +21,6 @@ export default function TabPanel(props: TabPanelProps) {
       {value === index && <Box>{children}</Box>}
     </Box>
   );
-}
+};
+
+export default TabPanel;

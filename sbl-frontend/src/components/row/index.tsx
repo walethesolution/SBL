@@ -1,15 +1,12 @@
 import * as React from "react";
 import {
   Box,
-  Paper,
-  Divider,
   Typography,
   Collapse,
   IconButton,
   Table,
   TableBody,
   TableCell,
-  TableContainer,
   TableHead,
   TableRow,
 } from "@mui/material";
@@ -17,8 +14,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { createData } from "../../utils";
 
-export default function Row(props: { row: ReturnType<typeof createData> }) {
-  const { row } = props;
+const Row: React.FC<{ player: ReturnType<typeof createData> }> = (props) => {
+  const { player } = props;
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -34,11 +31,11 @@ export default function Row(props: { row: ReturnType<typeof createData> }) {
           </IconButton>
         </TableCell>
         <TableCell component="th" scope="row">
-          {row.name}
+          {player.firstName} {player.lastName}
         </TableCell>
-        <TableCell align="right">{row.position}</TableCell>
-        <TableCell align="right">{row.height}</TableCell>
-        <TableCell align="right">{row.weight}</TableCell>
+        <TableCell align="right">{player.position}</TableCell>
+        <TableCell align="right">{player.height}</TableCell>
+        <TableCell align="right">{player.weight}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
@@ -57,14 +54,14 @@ export default function Row(props: { row: ReturnType<typeof createData> }) {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {row.history.map((historyRow) => (
-                    <TableRow key={historyRow.birthdate}>
+                  {player.history.map((historyRow) => (
+                    <TableRow key={historyRow.dob}>
                       <TableCell component="th" scope="row">
-                        {historyRow.birthdate}
+                        {historyRow.dob}
                       </TableCell>
                       <TableCell>{historyRow.countryOfOrigin}</TableCell>
                       <TableCell component="th" scope="row">
-                        {historyRow.nickname}
+                        {historyRow.nickName}
                       </TableCell>
                       <TableCell align="right">
                         {historyRow.experience}
@@ -79,4 +76,6 @@ export default function Row(props: { row: ReturnType<typeof createData> }) {
       </TableRow>
     </React.Fragment>
   );
-}
+};
+
+export default Row;

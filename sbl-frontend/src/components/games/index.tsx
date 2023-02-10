@@ -20,7 +20,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 
-export default function Games() {
+const Games: React.FC = () => {
   const [value, setValue] = React.useState(0);
   const [dateValue, setDateValue] = React.useState(
     dayjs("2014-08-18T21:11:54")
@@ -197,4 +197,6 @@ export default function Games() {
       </Box>
     </Box>
   );
-}
+};
+
+export default Games;

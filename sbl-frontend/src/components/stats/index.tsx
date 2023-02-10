@@ -18,7 +18,7 @@ import Typography from "@mui/material/Typography";
 import TabPanel from "../tabPanel";
 import { a11yProps } from "../../utils";
 
-export default function Stats() {
+const Stats: React.FC = () => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -601,4 +601,6 @@ export default function Stats() {
       </Box>
     </Box>
   );
-}
+};
+
+export default Stats;

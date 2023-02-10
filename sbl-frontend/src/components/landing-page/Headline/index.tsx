@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
 import mainPic from "../../../assets/headlinePic.jpg";
 
-export default function Headline() {
+const Headline: React.FC = () => {
   const navigate = useNavigate();
 
   // function handleClick() {
@@ -54,4 +54,6 @@ export default function Headline() {
       </Grid>
     </Box>
   );
-}
+};
+
+export default Headline;

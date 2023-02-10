@@ -1,7 +1,7 @@
 import { Box, Typography, Grid } from "@mui/material";
 import { useRouteError } from "react-router-dom";
 
-export default function ErrorPage() {
+const ErrorPage: React.FC = () => {
   const error: any = useRouteError();
   console.error(error);
 
@@ -32,4 +32,6 @@ export default function ErrorPage() {
       </Grid>
     </Box>
   );
-}
+};
+
+export default ErrorPage;

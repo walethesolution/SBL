@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 
-export default function Blog() {
+const Blog: React.FC = () => {
   return (
     <Box>
       <Box sx={{ margin: 25 }}>
@@ -19,4 +19,6 @@ export default function Blog() {
       </Box>
     </Box>
   );
-}
+};
+
+export default Blog;

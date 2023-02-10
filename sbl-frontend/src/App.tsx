@@ -10,7 +10,7 @@ import Blog from "./components/blog";
 import Stats from "./components/stats";
 import Players from "./components/players";
 
-export default function App() {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Box sx={{ backgroundColor: "rgba(55, 146, 211, 0.08)" }}>
@@ -28,4 +28,6 @@ export default function App() {
       </Box>
     </BrowserRouter>
   );
-}
+};
+
+export default App;

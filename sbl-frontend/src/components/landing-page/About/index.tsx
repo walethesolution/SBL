@@ -1,7 +1,7 @@
 import { Box, Typography, Button, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function About() {
+const About: React.FC = () => {
   const navigate = useNavigate();
 
   const buttonStyle = { width: "25%" };
@@ -54,4 +54,6 @@ export default function About() {
       </Grid>
     </Box>
   );
-}
+};
+
+export default About;
