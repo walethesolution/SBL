@@ -9,6 +9,7 @@ import About from "./components/about";
 import Blog from "./components/blog";
 import Stats from "./components/stats";
 import Players from "./components/players";
+import ComeJoinUs from "./components/comeJoinUs";
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/stats" element={<Stats />} />
           <Route path="/players" element={<Players />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/joinUs" element={<ComeJoinUs />} />
           <Route element={<ErrorPage />} />
         </Routes>
         <Footer />

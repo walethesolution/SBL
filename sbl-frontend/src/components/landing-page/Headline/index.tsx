@@ -6,10 +6,6 @@ import mainPic from "../../../assets/headlinePic.jpg";
 const Headline: React.FC = () => {
   const navigate = useNavigate();
 
-  // function handleClick() {
-  //   history.push("./signIn");
-  // }
-
   const imageStyles = {
     width: "643px",
     height: "720px",
@@ -43,7 +39,7 @@ const Headline: React.FC = () => {
             }}
             style={buttonStyles}
             size="large"
-            onClick={() => navigate("/signIn")}
+            onClick={() => navigate("/joinUs")}
           >
             Come join us
           </Button>

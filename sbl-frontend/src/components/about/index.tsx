@@ -70,6 +70,11 @@ const About: React.FC = () => {
               </Grid>
             </Grid>
           </Grid>
+          <Grid item>
+            <Typography color="text.secondary" sx={{ fontStyle: "italic" }}>
+              More than basketball
+            </Typography>
+          </Grid>
         </Grid>
       </Box>
     </Box>
