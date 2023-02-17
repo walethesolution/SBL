@@ -3,9 +3,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, Button, CardActionArea, CardActions, Grid } from "@mui/material";
-import TheBoys from "../../../assets/fall-ball3.jpg";
-import TreesnCourt from "../../../assets/TreesnCourt.jpg";
-import dataB from "../../../data/db.json";
+import { blogsData } from "./blogsData";
 
 const Blog: React.FC = () => {
   return (
@@ -17,47 +15,22 @@ const Blog: React.FC = () => {
       >
         TRENDING
       </Typography>
-      <Grid container spacing={2}>
-        <Grid item>
-          <Card sx={{ maxWidth: 350, marginTop: "20px" }}>
+      <Box sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+        {blogsData.map((blog) => (
+          <Card key={blog.id} sx={{ maxWidth: 350, margin: "10px" }}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 height="200"
-                image={TheBoys}
-                alt="Fall ball"
-              />
-              <CardContent>
-                <Typography
-                  gutterBottom
-                  variant="h4"
-                  component="div"
-                ></Typography>
-                <Typography variant="body2" color="text.secondary"></Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary">
-                More
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item>
-          <Card sx={{ maxWidth: 350, marginTop: "20px" }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="200"
-                image={TreesnCourt}
-                alt="Fall ball"
+                image={blog.image}
+                alt={blog.topic}
               />
               <CardContent>
                 <Typography gutterBottom variant="h4" component="div">
-                  {/* {secondTopic} */}
+                  {blog.topic}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {/* {secondContext} */}
+                  {blog.description}
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -67,8 +40,8 @@ const Blog: React.FC = () => {
               </Button>
             </CardActions>
           </Card>
-        </Grid>
-      </Grid>
+        ))}
+      </Box>
     </Box>
   );
 };

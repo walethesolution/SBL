@@ -12,18 +12,7 @@ import {
   TableRow,
 } from "@mui/material";
 import Row from "../row";
-import { createData } from "../../utils";
-import dataB from "../../data/db.json";
-
-const players = dataB.players;
-
-// const rows = [
-//   createData(1, "Olawale Ayejuyone", "SG", "6'0", "158 lbs"),
-//   createData(2, "Alexander Odita", "SF", "6'2", "198 lbs"),
-//   createData(3, "Dariel Soriano", "SG", "5'11", "187 lbs"),
-//   createData(4, "Steve Liadi", "PG", "6'2", "170 lbs"),
-//   createData(5, "Will Champion", "PF", "6'2", "228 lbs"),
-// ];
+import { playersData } from "./playersData";
 
 const Players: React.FC = () => {
   return (
@@ -52,9 +41,9 @@ const Players: React.FC = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {/* {players.map((player) => (
-              // <Row key={player.firstName} player={player} />
-            ))} */}
+            {playersData.map((player) => (
+              <Row key={player.id} player={player} />
+            ))}
           </TableBody>
         </Table>
       </TableContainer>

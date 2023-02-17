@@ -12,9 +12,9 @@ import {
 } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { createData } from "../../utils";
+import { PlayersType } from "../../types";
 
-const Row: React.FC<{ player: ReturnType<typeof createData> }> = (props) => {
+const Row: React.FC<{ player: PlayersType }> = (props) => {
   const { player } = props;
   const [open, setOpen] = React.useState(false);
 
