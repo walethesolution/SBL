@@ -23,7 +23,7 @@ import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 const Games: React.FC = () => {
   const [value, setValue] = React.useState(0);
   const [dateValue, setDateValue] = React.useState(
-    dayjs("2014-08-18T21:11:54")
+    dayjs("2023-06-21T10:00:00")
   );
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -42,8 +42,8 @@ const Games: React.FC = () => {
           onChange={handleChange}
           style={{ backgroundColor: "background.paper" }}
         >
-          <Tab label="All games" {...a11yProps(0)} />
-          <Tab label="Upcoming games" {...a11yProps(1)} />
+          <Tab label="Upcoming games" {...a11yProps(0)} />
+          <Tab label="All Games" {...a11yProps(1)} />
         </Tabs>
         <Box
           sx={{
