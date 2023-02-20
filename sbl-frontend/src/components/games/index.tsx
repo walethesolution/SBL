@@ -20,6 +20,14 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 
+/**
+ * All game days are on sundays, so we need to only show games on Sunday.
+ * There are two possible ways to display the games on sundays:
+ * First, get all 4 months of summer games and loop through the months to get sundays
+ * Second, Display all the days in the calender and if the day is not a sunday, return a game not available on this day message.
+ *
+ */
+
 const Games: React.FC = () => {
   const [value, setValue] = React.useState(0);
   const [dateValue, setDateValue] = React.useState(
@@ -57,7 +65,7 @@ const Games: React.FC = () => {
               <CardContent>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DesktopDatePicker
-                    label="Date desktop"
+                    label="Date"
                     inputFormat="MM/DD/YYYY"
                     value={dateValue}
                     onChange={handleDateChange}
@@ -67,6 +75,55 @@ const Games: React.FC = () => {
               </CardContent>
             </Card>
             <TabPanel value={value} index={0}>
+              <Box>
+                <Grid>
+                  <Grid item>
+                    <Card
+                      sx={{
+                        marginTop: "2%",
+                      }}
+                    >
+                      <Grid
+                        container
+                        sx={{
+                          justifyContent: "space-evenly",
+                          alignItems: "center",
+                        }}
+                      >
+                        <Grid item>
+                          <CardContent> </CardContent>
+                          <Avatar sx={{ width: 100, height: 100 }}>C</Avatar>
+                          <CardContent>
+                            <Typography>TEAM C</Typography>
+                          </CardContent>
+                        </Grid>
+                        <Grid item>
+                          <Stack>
+                            <Typography variant="h4">10:00 AM ET</Typography>
+                          </Stack>
+                        </Grid>
+                        <Grid item>
+                          <CardContent> </CardContent>
+                          <Avatar sx={{ width: 100, height: 100 }}>D</Avatar>
+                          <CardContent>
+                            <Typography>TEAM D</Typography>
+                          </CardContent>
+                        </Grid>
+                      </Grid>
+                      <Divider variant="middle" />
+                      <Box
+                        sx={{ display: "flex", justifyContent: "space-evenly" }}
+                      >
+                        <Button color="inherit">Line-up</Button>
+                        <Divider orientation="vertical" flexItem />
+                        <Button color="inherit">Box Score</Button>
+                      </Box>
+                    </Card>
+                  </Grid>
+                </Grid>
+              </Box>
+            </TabPanel>
+            <TabPanel value={value} index={1}>
               <Box>
                 <Grid>
                   <Grid item>
@@ -135,55 +192,6 @@ const Games: React.FC = () => {
                         sx={{ display: "flex", justifyContent: "space-evenly" }}
                       >
                         <Button color="inherit">Highlight</Button>
-                        <Divider orientation="vertical" flexItem />
-                        <Button color="inherit">Box Score</Button>
-                      </Box>
-                    </Card>
-                  </Grid>
-                </Grid>
-              </Box>
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              <Box>
-                <Grid>
-                  <Grid item>
-                    <Card
-                      sx={{
-                        marginTop: "2%",
-                      }}
-                    >
-                      <Grid
-                        container
-                        sx={{
-                          justifyContent: "space-evenly",
-                          alignItems: "center",
-                        }}
-                      >
-                        <Grid item>
-                          <CardContent> </CardContent>
-                          <Avatar sx={{ width: 100, height: 100 }}>C</Avatar>
-                          <CardContent>
-                            <Typography>TEAM C</Typography>
-                          </CardContent>
-                        </Grid>
-                        <Grid item>
-                          <Stack>
-                            <Typography variant="h4">10:00 AM ET</Typography>
-                          </Stack>
-                        </Grid>
-                        <Grid item>
-                          <CardContent> </CardContent>
-                          <Avatar sx={{ width: 100, height: 100 }}>D</Avatar>
-                          <CardContent>
-                            <Typography>TEAM D</Typography>
-                          </CardContent>
-                        </Grid>
-                      </Grid>
-                      <Divider variant="middle" />
-                      <Box
-                        sx={{ display: "flex", justifyContent: "space-evenly" }}
-                      >
-                        <Button color="inherit">Line-up</Button>
                         <Divider orientation="vertical" flexItem />
                         <Button color="inherit">Box Score</Button>
                       </Box>
