@@ -14,11 +14,11 @@ import {
 } from "@mui/material";
 import TabPanel from "../tabPanel";
 import { a11yProps } from "../../utils";
-import dayjs from "dayjs";
 import TextField from "@mui/material/TextField";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
+import GameDays from "./gamesData";
 
 /**
  * All game days are on sundays, so we need to only show games on Sunday.
@@ -30,9 +30,7 @@ import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 
 const Games: React.FC = () => {
   const [value, setValue] = React.useState(0);
-  const [dateValue, setDateValue] = React.useState(
-    dayjs("2023-06-21T10:00:00")
-  );
+  const [dateValue, setDateValue] = React.useState(GameDays[0].date);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -60,6 +58,8 @@ const Games: React.FC = () => {
             width: "75%",
           }}
         >
+          {/* conditional rendering for components on date */}
+          {}
           <Stack>
             <Card>
               <CardContent>
