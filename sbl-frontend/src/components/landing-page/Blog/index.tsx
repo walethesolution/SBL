@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -35,9 +36,11 @@ const Blog: React.FC = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                More
-              </Button>
+              <Link to="/blog" style={{ textDecoration: "none" }}>
+                <Button size="small" color="primary">
+                  More
+                </Button>
+              </Link>
             </CardActions>
           </Card>
         ))}
