@@ -29,9 +29,9 @@ const GamesSchedule: React.FC = () => {
             >
               <Grid item>
                 <CardContent> </CardContent>
-                <Avatar sx={{ width: 100, height: 100 }}>C</Avatar>
+                <Avatar sx={{ width: 100, height: 100 }}>A</Avatar>
                 <CardContent>
-                  <Typography>TEAM C</Typography>
+                  <Typography>TEAM A</Typography>
                 </CardContent>
               </Grid>
               <Grid item>
@@ -41,9 +41,9 @@ const GamesSchedule: React.FC = () => {
               </Grid>
               <Grid item>
                 <CardContent> </CardContent>
-                <Avatar sx={{ width: 100, height: 100 }}>D</Avatar>
+                <Avatar sx={{ width: 100, height: 100 }}>B</Avatar>
                 <CardContent>
-                  <Typography>TEAM D</Typography>
+                  <Typography>TEAM B</Typography>
                 </CardContent>
               </Grid>
             </Grid>

@@ -4,11 +4,12 @@ const NoGamesScheduled: React.FC = () => {
   return (
     <Box
       sx={{
-        margin: "30%",
-        marginTop: "4%",
+        margin: "10%",
       }}
     >
-      <Typography variant="h4">NO SCORES YET </Typography>
+      <Typography variant="h4" align="center">
+        NO GAMES{" "}
+      </Typography>
     </Box>
   );
 };
