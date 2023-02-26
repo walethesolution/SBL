@@ -32,7 +32,7 @@ const Points: React.FC = () => {
                 <ListItemText primary="Fuad" />
               </Grid>
               <Grid item>
-                <Typography variant="h6">30</Typography>
+                <Typography variant="h6">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -45,7 +45,7 @@ const Points: React.FC = () => {
                 <ListItemText primary="Dariel" />
               </Grid>
               <Grid item>
-                <Typography variant="h6">22</Typography>
+                <Typography variant="h6">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -58,7 +58,7 @@ const Points: React.FC = () => {
                 <ListItemText primary="OG" />
               </Grid>
               <Grid item>
-                <Typography variant="h6">20</Typography>
+                <Typography variant="h6">-</Typography>
               </Grid>
             </Grid>
           </ListItem>

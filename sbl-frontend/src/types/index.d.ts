@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 declare module "*.jpg" {
   const path: string;
   export default path;
@@ -31,4 +33,13 @@ export interface Blogger {
   topic: string;
   description: string;
   link: string;
+}
+
+export interface GameDay {
+  id: number;
+  date: dayjs.Dayjs;
+}
+
+export interface LeadersProps {
+  leaderType: "current" | "season";
 }

@@ -8,7 +8,7 @@ const NoGamesScheduled: React.FC = () => {
       }}
     >
       <Typography variant="h4" align="center">
-        NO GAMES{" "}
+        NO GAMES
       </Typography>
     </Box>
   );

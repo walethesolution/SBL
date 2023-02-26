@@ -32,7 +32,7 @@ const Assists: React.FC = () => {
                 <ListItemText primary="Quam" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">11</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -45,7 +45,7 @@ const Assists: React.FC = () => {
                 <ListItemText primary="Steve" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">8</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -58,7 +58,7 @@ const Assists: React.FC = () => {
                 <ListItemText primary="Iman" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">7</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>

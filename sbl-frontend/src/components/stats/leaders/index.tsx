@@ -27,22 +27,6 @@ const Leaders: React.FC<LeadersProps> = ({ leaderType }) => {
           </Typography>
         </Button>
       </Grid>
-      {/* {leaderType === "season" && (
-        <Grid
-          item
-          xs={6}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "white",
-          }}
-        >
-          <Button sx={{ backgroundColor: "white" }}>
-            <Typography color="black">Season leaders</Typography>
-          </Button>
-        </Grid>
-      )} */}
     </Grid>
   );
 };

@@ -32,7 +32,7 @@ const Blocks: React.FC = () => {
                 <ListItemText primary="Sam" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">4</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -45,7 +45,7 @@ const Blocks: React.FC = () => {
                 <ListItemText primary="Adolo" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">4</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -58,7 +58,7 @@ const Blocks: React.FC = () => {
                 <ListItemText primary="OG" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">3</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>

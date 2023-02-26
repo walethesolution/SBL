@@ -32,7 +32,7 @@ const Rebounds: React.FC = () => {
                 <ListItemText primary="Tianty" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">10</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -45,7 +45,7 @@ const Rebounds: React.FC = () => {
                 <ListItemText primary="Will" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">8</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
@@ -58,7 +58,7 @@ const Rebounds: React.FC = () => {
                 <ListItemText primary="Victor" />
               </Grid>
               <Grid item>
-                <Typography variant="h5">6</Typography>
+                <Typography variant="h5">-</Typography>
               </Grid>
             </Grid>
           </ListItem>
