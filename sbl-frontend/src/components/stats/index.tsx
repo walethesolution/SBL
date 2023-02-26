@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Box, Button, Grid, Tabs, Tab } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import { Box, Tabs, Tab, Grid, Button, Typography } from "@mui/material";
 import TabPanel from "../tabPanel";
 import { a11yProps } from "../../utils";
 import Points from "./points";
@@ -10,6 +9,15 @@ import Blocks from "./blocks";
 
 const Stats: React.FC = () => {
   const [value, setValue] = React.useState(0);
+  const [activeButton, setActiveButton] = React.useState("currentWeek");
+
+  const handleCurrentWeekClick = () => {
+    setActiveButton("currentWeek");
+  };
+
+  const handleSeasonLeadersClick = () => {
+    setActiveButton("seasonLeaders");
+  };
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -29,6 +37,7 @@ const Stats: React.FC = () => {
           <Tab label="Rebounds" {...a11yProps(3)} />
           <Tab label="Blocks" {...a11yProps(4)} />
         </Tabs>
+        -
         <Box
           sx={{
             marginLeft: "13%",
@@ -42,7 +51,8 @@ const Stats: React.FC = () => {
                 <Grid
                   container
                   sx={{
-                    backgroundColor: "white",
+                    backgroundColor:
+                      activeButton === "currentWeek" ? "white" : "black",
                     borderRadius: "4px",
                   }}
                 >
@@ -53,11 +63,16 @@ const Stats: React.FC = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      backgroundColor: "black",
+                      backgroundColor:
+                        activeButton === "currentWeek" ? "black" : "white",
                     }}
                   >
-                    <Button>
-                      <Typography color="white">
+                    <Button onClick={handleCurrentWeekClick}>
+                      <Typography
+                        color={
+                          activeButton === "currentWeek" ? "white" : "black"
+                        }
+                      >
                         Current week's leaders
                       </Typography>
                     </Button>
@@ -69,10 +84,18 @@ const Stats: React.FC = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      backgroundColor:
+                        activeButton === "seasonLeaders" ? "black" : "white",
                     }}
                   >
-                    <Button>
-                      <Typography color="black">Season leaders</Typography>
+                    <Button onClick={handleSeasonLeadersClick}>
+                      <Typography
+                        color={
+                          activeButton === "seasonLeaders" ? "white" : "black"
+                        }
+                      >
+                        Season leaders
+                      </Typography>
                     </Button>
                   </Grid>
                 </Grid>
