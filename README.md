@@ -29,7 +29,7 @@ Once you in the /sbl-frontend directory run ```npm start``` to start live server
 - Frontend: Typescript, React, MUI.
 
 *Please note that at this time the backend code for this project is not yet included*<br>
-*The dependencies for the backend will be installed and features like api endpoints, data validation and error handling will be added to the backend code*<br>
+*The dependencies for the backend will be installed and features like api endpoints, data validation and error handling will be added to the backend code by 03/14/23*<br>
 *Readme will be updated as work continues*
 
 - Backend: NestJs for building the server, Prisma for database operations, PostgreSQL for data storage.
