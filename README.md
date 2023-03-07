@@ -46,6 +46,7 @@ We welcome contributions to this project! If you'd like to contribute to the fro
 - Create a new branch for your feature or bug fix
 - Make your changes and commit them to your branch
 - Submit a pull request to this repository, and we'll review your changes<br>
+
 Please note that we are not currently accepting contributions to the backend code, as it is not yet available in this repository. If you'd like to contribute to the backend code once it's available, please keep an eye on this repository for updates.
 
 ## Contact
