@@ -25,7 +25,7 @@ First, ```cd sbl-frontend```
 
 Once you in the /sbl-frontend directory run ```npm start``` to start live server.
 
-## Tech Stack -
+## Tech Stack
 - Frontend: Typescript, React, MUI.
 
 *Please note that at this time the backend code for this project is not yet included*<br>
