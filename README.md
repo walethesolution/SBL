@@ -35,6 +35,10 @@ Once you in the /sbl-frontend directory run ```npm start``` to start live server
 - Backend: NestJs for building the server, Prisma for database operations, PostgreSQL for data storage.
 - Infrastructure: AWS
 
+### Todo
+- Only Desktop friendly for now
+- Mobile friendly on 03/09/23
 
 ## Contact
 If you have any questions or comments about this repository, please feel free to contact me at olawaleayejuyone@gmail.com. I'd love to hear from you!
+
