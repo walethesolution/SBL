@@ -39,6 +39,15 @@ Once you in the /sbl-frontend directory run ```npm start``` to start live server
 - Only Desktop friendly for now
 - Mobile friendly on 03/09/23
 
+## Contributing
+We welcome contributions to this project! If you'd like to contribute to the frontend code, please follow these steps:
+
+- Fork this repository
+- Create a new branch for your feature or bug fix
+- Make your changes and commit them to your branch
+- Submit a pull request to this repository, and we'll review your changes
+Please note that we are not currently accepting contributions to the backend code, as it is not yet available in this repository. If you'd like to contribute to the backend code once it's available, please keep an eye on this repository for updates.
+
 ## Contact
 If you have any questions or comments about this repository, please feel free to contact me at olawaleayejuyone@gmail.com. I'd love to hear from you!
 
