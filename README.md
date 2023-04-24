@@ -37,7 +37,7 @@ Once you in the /sbl-frontend directory run ```npm start``` to start live server
 
 ### Todo
 - Only Desktop friendly for now
-- Mobile friendly on 03/09/23
+- Mobile friendly on 04/25/23
 
 ## Contributing
 We welcome contributions to this project! If you'd like to contribute to the frontend code, please follow these steps:
